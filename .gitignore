@@ -1,0 +1,7 @@
+node_modules/
+dist/
+# Raw LinkedIn exports must never be committed — they contain private messages.
+raw/
+*.csv
+*.zip
+linkedin-export*/

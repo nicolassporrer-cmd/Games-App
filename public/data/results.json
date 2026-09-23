@@ -1,0 +1,347 @@
+{
+  "generatedAt": "2026-09-23T10:03:05.531Z",
+  "games": [
+    "Queens",
+    "Tango",
+    "Zip",
+    "Patches"
+  ],
+  "results": [
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 188,
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 188,
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 189,
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 189,
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 189,
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 189,
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 189,
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 190,
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 190,
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 190,
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 190,
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 190,
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 874,
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 874,
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 875,
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 875,
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 875,
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 875,
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 875,
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 876,
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 876,
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 876,
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 876,
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 876,
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 714,
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 714,
+      "score": 27,
+      "display": "0:27"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 715,
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 715,
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 715,
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 715,
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 715,
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 716,
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 716,
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 716,
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 716,
+      "score": 28,
+      "display": "0:28"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 716,
+      "score": 30,
+      "display": "0:30"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 553,
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 553,
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 554,
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 554,
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 554,
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 554,
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 554,
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 555,
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 555,
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 555,
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 555,
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 555,
+      "score": 24,
+      "display": "0:24"
+    }
+  ]
+}
