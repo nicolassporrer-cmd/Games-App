@@ -8,10 +8,18 @@
 
 export const GAMES = ['Queens', 'Tango', 'Zip', 'Patches']
 
-// Zip, Tango and Queens are timed, so lower is better. Patches is unconfirmed:
-// until we've seen real share text this stays empty and Patches is treated as
-// lower-is-better like the rest. Flip it here once we know.
+// All four games are timed and lower is better — now confirmed against real
+// share text for every one of them, Patches included.
 export const HIGHER_IS_BETTER = new Set([])
+
+// Queens and Tango are the harder two, so their medals count double in the
+// OVERALL ranking. The coefficient never touches the per-game columns: a gold in
+// Tango is still one gold there, and doubling it would misreport what happened.
+// It also cannot change a single-game view, where scaling every medal by the
+// same factor leaves the order identical.
+export const COEFFICIENTS = { Queens: 2, Tango: 2, Zip: 1, Patches: 1 }
+
+export const coefficientOf = game => COEFFICIENTS[game] ?? 1
 
 // One result per (player, game, puzzle). If someone posts the same puzzle twice,
 // keep the FIRST one — re-posting a better score later shouldn't win a medal.
@@ -70,17 +78,30 @@ export function buildMedalTable(results, games = GAMES) {
     }
   }
 
+  // `total` is the honest medal count. `weighted` applies the per-game
+  // coefficient to each tier separately, so the Olympic tiebreak structure is
+  // preserved without inventing point values for gold/silver/bronze.
+  // `played` is never weighted — it counts puzzles, not medals.
   const rows = [...players.values()].map(p => {
     const total = { gold: 0, silver: 0, bronze: 0, played: 0 }
-    for (const g of games) for (const k of Object.keys(total)) total[k] += p.games[g][k]
-    return { ...p, total }
+    const weighted = { gold: 0, silver: 0, bronze: 0 }
+    for (const g of games) {
+      const coef = coefficientOf(g)
+      for (const k of ['gold', 'silver', 'bronze']) {
+        total[k] += p.games[g][k]
+        weighted[k] += p.games[g][k] * coef
+      }
+      total.played += p.games[g].played
+    }
+    return { ...p, total, weighted }
   })
 
-  // Olympic ordering: golds, then silvers, then bronzes, then name for stability.
+  // Olympic ordering on the weighted figures: golds, then silvers, then bronzes,
+  // then name for stability.
   rows.sort((a, b) =>
-    b.total.gold - a.total.gold ||
-    b.total.silver - a.total.silver ||
-    b.total.bronze - a.total.bronze ||
+    b.weighted.gold - a.weighted.gold ||
+    b.weighted.silver - a.weighted.silver ||
+    b.weighted.bronze - a.weighted.bronze ||
     a.player.localeCompare(b.player))
 
   return { rows, puzzleCount: puzzles.size, resultCount: clean.length }

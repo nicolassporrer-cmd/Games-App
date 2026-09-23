@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { buildMedalTable, rankPuzzle, GAMES } from './lib/ranking.js'
+import { buildMedalTable, rankPuzzle, GAMES, coefficientOf } from './lib/ranking.js'
 import { parseConversation } from './lib/parse.js'
 import { resolvePlayer } from './lib/players.js'
 import { PERIODS, withinPeriod, puzzleToDate } from './lib/dates.js'
@@ -28,40 +28,70 @@ function merge(existing, incoming) {
 
 function MedalTable({ rows, games }) {
   if (!rows.length) return <p className="empty">Aucun résultat.</p>
+
+  // Coefficients only mean anything when several games are combined. On a single
+  // game tab every medal would be scaled by the same factor, so the order would
+  // not change and the inflated numbers would just be confusing — show raw there.
+  const weighted = games.length > 1
+  const shown = r => (weighted ? r.weighted : r.total)
+
   return (
-    <div className="table-wrap">
-      <table className="medals">
-        <thead>
-          <tr>
-            <th className="rank"></th>
-            <th className="who">Joueur</th>
-            <th>🥇 1<sup>er</sup></th><th>🥈 2<sup>e</sup></th><th>🥉 3<sup>e</sup></th>
-            <th className="played">Parties</th>
-            {games.length > 1 && games.map(g => <th key={g} className="per-game">{g}</th>)}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((r, i) => (
-            <tr key={r.player}>
-              <td className="rank">{i + 1}</td>
-              <td className="who">{r.player}</td>
-              <td className="gold">{r.total.gold}</td>
-              <td className="silver">{r.total.silver}</td>
-              <td className="bronze">{r.total.bronze}</td>
-              <td className="played">{r.total.played}</td>
-              {games.length > 1 && games.map(g => (
-                <td key={g} className="per-game">
-                  {r.games[g].played === 0
-                    ? <span className="dash">–</span>
-                    : `${r.games[g].gold}/${r.games[g].silver}/${r.games[g].bronze}`}
-                </td>
+    <>
+      {weighted && (
+        <p className="weighting">
+          Classement <strong>pondéré</strong> : une médaille au Queens ou au Tango compte double.
+          Les colonnes par jeu restent en médailles brutes.
+        </p>
+      )}
+      <div className="table-wrap">
+        <table className="medals">
+          <thead>
+            <tr>
+              <th className="rank"></th>
+              <th className="who">Joueur</th>
+              <th>🥇 1<sup>er</sup></th><th>🥈 2<sup>e</sup></th><th>🥉 3<sup>e</sup></th>
+              <th className="played">Parties</th>
+              {weighted && games.map(g => (
+                <th key={g} className="per-game">
+                  {g}
+                  <span className={`coef${coefficientOf(g) > 1 ? ' up' : ''}`}>coef. ×{coefficientOf(g)}</span>
+                </th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
-      {games.length > 1 && <p className="legend">Colonnes par jeu : 1<sup>er</sup>/2<sup>e</sup>/3<sup>e</sup> — « – » signifie que le joueur n’a jamais posté ce jeu.</p>}
-    </div>
+          </thead>
+          <tbody>
+            {rows.map((r, i) => (
+              <tr key={r.player}>
+                <td className="rank">{i + 1}</td>
+                <td className="who">{r.player}</td>
+                {['gold', 'silver', 'bronze'].map(k => (
+                  <td key={k} className={k}
+                    /* Hovering gives the true medal count behind the weighted figure. */
+                    title={weighted ? `${r.total[k]} en réel, ${shown(r)[k]} pondéré` : undefined}>
+                    {shown(r)[k]}
+                  </td>
+                ))}
+                <td className="played">{r.total.played}</td>
+                {weighted && games.map(g => (
+                  <td key={g} className="per-game">
+                    {r.games[g].played === 0
+                      ? <span className="dash">–</span>
+                      : `${r.games[g].gold}/${r.games[g].silver}/${r.games[g].bronze}`}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {weighted && (
+          <p className="legend">
+            Colonnes par jeu : 1<sup>er</sup>/2<sup>e</sup>/3<sup>e</sup> en médailles brutes —
+            « – » signifie que le joueur n’a jamais posté ce jeu. Survole un total pour voir le
+            nombre réel de médailles.
+          </p>
+        )}
+      </div>
+    </>
   )
 }
 

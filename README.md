@@ -32,6 +32,27 @@ posté en retard ou dans un autre fuseau est rattaché à la bonne grille.
 - `Pinpoint`, `Crossclimb` et `Mini Sudoku` sont comptés puis ignorés (le rapport d'import
   indique combien).
 
+## Coefficients
+
+Queens et Tango étant plus difficiles, leurs médailles **comptent double** dans le classement
+général. Zip et Patches comptent une fois. Les coefficients sont définis dans
+`COEFFICIENTS` (`src/lib/ranking.js`) et affichés sous chaque en-tête de colonne.
+
+Le coefficient est appliqué **à chaque rang séparément** (or pondéré, puis argent pondéré,
+puis bronze pondéré), ce qui conserve le départage olympique sans inventer une valeur en
+points pour l'or, l'argent et le bronze.
+
+Deux choses qu'il ne touche jamais :
+
+- **Les colonnes par jeu restent en médailles brutes.** Un or au Tango vaut un or dans la
+  colonne Tango ; le doubler y serait un faux compte rendu. Survoler un total pondéré affiche
+  le nombre réel de médailles.
+- **Les onglets d'un seul jeu affichent le brut.** Multiplier toutes les médailles par le même
+  facteur ne change pas l'ordre — seuls les nombres seraient gonflés, donc inutilement
+  trompeurs.
+
+« Parties » compte des grilles, pas des médailles : jamais pondéré.
+
 ## Périodes et dates
 
 Deux rangées d'onglets : le **jeu** (Tout, Queens, Tango, Zip, Patches) et la **période**

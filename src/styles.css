@@ -136,3 +136,17 @@ footer p { margin: 4px 0; }
   .banner-text h1 { font-size: 19px; line-height: 1.25; }
   .banner-text .sub { font-size: 13px; }
 }
+
+/* --- Weighted ranking ------------------------------------------------------ */
+.weighting {
+  margin: 0 0 10px; font-size: 13px; color: var(--muted);
+}
+.weighting strong { color: var(--text); }
+/* The coefficient sits under the game name in the column header, so the ×2 is
+   attached to the game it applies to rather than explained only in a legend. */
+th.per-game .coef {
+  display: block; margin-top: 3px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0;
+  text-transform: none; color: var(--muted);
+}
+th.per-game .coef.up { color: var(--accent); }
