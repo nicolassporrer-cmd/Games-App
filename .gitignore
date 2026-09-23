@@ -1,6 +1,25 @@
+# Generated files — never edit directly
+*.local.html
+
+# Session data
+payloads/
+transcripts/
+
+# Credentials
+.env
+*.env.local
+
+# Plans — TRACKED on purpose: they are part of the rebuild spec (see JOURNAL.md)
+
+# Claude local settings
+.claude/settings.local.json
+.claude/last_anchor_check
+
+# Node / npm
 node_modules/
 dist/
-# Raw LinkedIn exports must never be committed — they contain private messages.
+
+# Raw LinkedIn conversation exports must NEVER be committed — private messages.
 raw/
 *.csv
 *.zip
