@@ -32,7 +32,7 @@ const allSenders = new Set()
 
 for (const f of files) {
   const text = readFileSync(new URL(f, rawDir), 'utf8')
-  const { results, ignored, unmatched, senders } = parseConversation(text)
+  const { results, ignored, quoted, unmatched, senders } = parseConversation(text)
   senders.forEach(s => allSenders.add(s))
 
   parsedTotal += results.length
@@ -45,7 +45,7 @@ for (const f of files) {
     if (byKey.has(key)) continue          // first recorded score wins
     byKey.set(key, { player, game: r.game, puzzle: r.puzzle, date: puzzleToDate(r.game, r.puzzle), score: r.score, display: r.display })
   }
-  console.log(`  ${f}: ${results.length} results, ${ignored.length} ignored, ${unmatched.length} unmatched`)
+  console.log(`  ${f}: ${results.length} results, ${ignored.length} ignored, ${quoted.length} quoted, ${unmatched.length} unmatched`)
 }
 
 const results = [...byKey.values()].sort((a, b) =>

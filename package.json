@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "import": "node scripts/import.mjs",
-    "test": "node scripts/test-ranking.mjs",
+    "test": "node scripts/test-ranking.mjs && node scripts/test-parse.mjs",
     "report": "node scripts/report.mjs",
     "dev": "vite",
     "build": "vite build",
