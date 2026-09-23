@@ -1,4 +1,4 @@
-# Games App
+# Les Kings et les Queens du Queens - Leaderboard
 
 Classement des quatre jeux LinkedIn — **Queens, Tango, Zip, Patches** — pour les six joueurs
 du groupe, à partir des résultats partagés dans la conversation LinkedIn.

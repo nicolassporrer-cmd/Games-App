@@ -8,6 +8,8 @@ import { PERIODS, withinPeriod, puzzleToDate } from './lib/dates.js'
 // with the right base and fingerprints the filename for cache-busting.
 import banner from './assets/banner.webp'
 
+const APP_NAME = 'Les Kings et les Queens du Queens - Leaderboard'
+
 const MEDALS = { 1: '🥇', 2: '🥈', 3: '🥉' }
 
 // Merge on (player, game, puzzle) with the existing score winning, mirroring the
@@ -191,8 +193,8 @@ export default function App() {
     [all, scope, period])
   const { rows, puzzleCount, resultCount } = useMemo(() => buildMedalTable(scoped, games), [scoped, scope])
 
-  if (error) return <main className="app"><h1>Games App</h1><p className="empty">Chargement impossible : {error}</p></main>
-  if (!data) return <main className="app"><h1>Games App</h1><p className="empty">Chargement…</p></main>
+  if (error) return <main className="app"><h1>{APP_NAME}</h1><p className="empty">Chargement impossible : {error}</p></main>
+  if (!data) return <main className="app"><h1>{APP_NAME}</h1><p className="empty">Chargement…</p></main>
 
   return (
     <main className="app">
@@ -202,7 +204,7 @@ export default function App() {
             the space and the table below doesn't jump when the image loads. */}
         <img src={banner} alt="" width="1920" height="1440" />
         <div className="banner-text">
-          <h1>Games App</h1>
+          <h1>{APP_NAME}</h1>
           <p className="sub">
             {resultCount} résultats · {puzzleCount} grilles · {rows.length} joueurs
             {extra.length > 0 && <span className="local"> · aperçu local non publié</span>}

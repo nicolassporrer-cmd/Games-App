@@ -124,7 +124,15 @@ footer p { margin: 4px 0; }
 }
 
 @media (max-width: 600px) {
-  .banner img { height: 130px; }
+  /* The title wraps to two lines at phone width, pushing the text up into the
+     bright part of the photo where the desktop scrim is nearly transparent. So
+     the band gets taller, the type smaller, and the scrim stays dark all the way
+     up instead of fading out at 78%. */
+  .banner img { height: 168px; }
+  .banner::after {
+    background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.62) 55%, rgba(0,0,0,0.28) 100%);
+  }
   .banner-text { padding: 12px 14px; }
-  .banner-text h1 { font-size: 22px; }
+  .banner-text h1 { font-size: 19px; line-height: 1.25; }
+  .banner-text .sub { font-size: 13px; }
 }
