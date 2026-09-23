@@ -3,6 +3,10 @@ import { buildMedalTable, rankPuzzle, GAMES } from './lib/ranking.js'
 import { parseConversation } from './lib/parse.js'
 import { resolvePlayer } from './lib/players.js'
 import { PERIODS, withinPeriod, puzzleToDate } from './lib/dates.js'
+// Imported rather than referenced from public/: the site is served from
+// /Games-App/, so a hardcoded absolute path would 404. Vite rewrites this one
+// with the right base and fingerprints the filename for cache-busting.
+import banner from './assets/banner.webp'
 
 const MEDALS = { 1: '🥇', 2: '🥈', 3: '🥉' }
 
@@ -192,12 +196,18 @@ export default function App() {
 
   return (
     <main className="app">
-      <header>
-        <h1>Games App</h1>
-        <p className="sub">
-          {resultCount} résultats · {puzzleCount} grilles · {rows.length} joueurs
-          {extra.length > 0 && <span className="local"> · aperçu local non publié</span>}
-        </p>
+      <header className="banner">
+        {/* Decorative — the heading already carries the meaning, so alt is empty.
+            width/height are the real pixel dimensions so the browser reserves
+            the space and the table below doesn't jump when the image loads. */}
+        <img src={banner} alt="" width="1920" height="1440" />
+        <div className="banner-text">
+          <h1>Games App</h1>
+          <p className="sub">
+            {resultCount} résultats · {puzzleCount} grilles · {rows.length} joueurs
+            {extra.length > 0 && <span className="local"> · aperçu local non publié</span>}
+          </p>
+        </div>
       </header>
 
       <nav className="tabs">

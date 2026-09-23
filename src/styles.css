@@ -91,3 +91,40 @@ footer p { margin: 4px 0; }
 .tabs.periods { margin-top: -6px; }
 .tabs.periods button { font-size: 13px; padding: 5px 12px; }
 .puzzle h3 .date { display: block; font-size: 12px; color: var(--muted); font-weight: 400; margin-top: 2px; }
+
+/* --- Banner ---------------------------------------------------------------
+   The source photo is 4:3, so a wide band shows only a slice of it. The crop
+   is biased upward (object-position 30%) because that is where the K♥ and Q♥
+   indices sit — dead centre would show only the middle of the two figures and
+   lose what makes the image readable as playing cards.
+   The photo is mostly white, so the title needs a dark scrim to stay legible
+   in BOTH themes rather than relying on the theme's text colour. */
+.banner { position: relative; border-radius: 14px; overflow: hidden; margin-bottom: 4px; }
+.banner img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 30%;
+  /* Dark is the default theme here; a bright white photo glares against it. */
+  filter: brightness(0.88);
+}
+.banner::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.38) 45%, rgba(0,0,0,0) 78%);
+}
+.banner-text { position: absolute; bottom: 0; left: 0; right: 0; z-index: 1; padding: 16px 20px; }
+.banner-text h1 { color: #fff; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
+.banner-text .sub { color: rgba(255,255,255,0.88); text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+.banner-text .local { color: #9fc4ff; }
+
+@media (prefers-color-scheme: light) {
+  .banner img { filter: none; }
+}
+
+@media (max-width: 600px) {
+  .banner img { height: 130px; }
+  .banner-text { padding: 12px 14px; }
+  .banner-text h1 { font-size: 22px; }
+}
