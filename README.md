@@ -32,6 +32,26 @@ posté en retard ou dans un autre fuseau est rattaché à la bonne grille.
 - `Pinpoint`, `Crossclimb` et `Mini Sudoku` sont comptés puis ignorés (le rapport d'import
   indique combien).
 
+## Périodes et dates
+
+Deux rangées d'onglets : le **jeu** (Tout, Queens, Tango, Zip, Patches) et la **période**
+(Tout le temps, 30 derniers jours, 7 derniers jours). Les médailles sont **recalculées** dans
+la période choisie — un podium n'a de sens qu'entre les joueurs présents sur cette période.
+
+Les messages LinkedIn ne portent pas de date exploitable : l'interface affiche « lundi » ou
+« Aujourd'hui », et un copier-coller ne capture que ça. Les dates sont donc **déduites** du
+numéro de grille via l'ancre définie dans `src/lib/dates.js`.
+
+Cette ancre a été vérifiée de quatre façons indépendantes : sur l'échantillon du 21 au
+23 septembre 2026, Queens, Tango, Zip et Patches avancent chacun d'exactement 1 par jour, et
+les séparateurs de jour du copier-coller (lundi / mardi / Aujourd'hui) correspondent bien aux
+21 / 22 / 23 septembre.
+
+Limite assumée : si LinkedIn interrompait un jeu une journée, toutes les dates **antérieures**
+à cette pause décaleraient d'un jour. Cela pourrait faire entrer ou sortir une grille d'une
+fenêtre de 30 jours, mais ne peut ni réordonner ni modifier un score — les médailles sont
+toujours calculées à partir du numéro de grille, jamais de la date.
+
 ## Mettre à jour le classement
 
 ```bash

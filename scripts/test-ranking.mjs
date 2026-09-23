@@ -1,6 +1,7 @@
 // Synthetic fixtures ONLY — these numbers exist to prove the engine's edge cases
 // and must never reach data/ or the UI.
 import { buildMedalTable, rankPuzzle, dedupe } from '../src/lib/ranking.js'
+import { puzzleToDate, withinPeriod } from '../src/lib/dates.js'
 
 let pass = 0, fail = 0
 const check = (name, got, want) => {
@@ -64,6 +65,43 @@ check('dedupe keeps first post, not best score',
 check('non-numeric score excluded from ranking',
   rankPuzzle([r('Ana','Zip',1,NaN), r('Ben','Zip',1,50)], 'Zip').map(e => e.player),
   ['Ben'])
+
+// --- date derivation -------------------------------------------------------
+// The anchor claims 2026-09-23 for Queens #876 / Tango #716 / Zip #555 /
+// Patches #190, so all four must agree on the earlier days too.
+check('anchor maps to its own date', puzzleToDate('Queens', 876), '2026-09-23')
+check('four games agree on 2026-09-21',
+  [puzzleToDate('Queens', 874), puzzleToDate('Tango', 714), puzzleToDate('Zip', 553), puzzleToDate('Patches', 188)],
+  ['2026-09-21', '2026-09-21', '2026-09-21', '2026-09-21'])
+check('dates run backwards correctly across a month boundary',
+  puzzleToDate('Queens', 846), '2026-08-24')
+check('untracked game has no derived date', puzzleToDate('Pinpoint', 100), null)
+
+const TODAY = new Date('2026-09-23T12:00:00Z')
+check('today is inside every window',
+  [withinPeriod('2026-09-23', 7, TODAY), withinPeriod('2026-09-23', 30, TODAY), withinPeriod('2026-09-23', null, TODAY)],
+  [true, true, true])
+// A 30-day window covers today plus the 29 days before it, so 30 days back is out.
+check('30-day window far edge is exclusive',
+  [withinPeriod('2026-08-25', 30, TODAY), withinPeriod('2026-08-24', 30, TODAY)],
+  [true, false])
+check('a future date is outside the window', withinPeriod('2026-09-24', 30, TODAY), false)
+check('a missing date is never filtered out', withinPeriod(null, 30, TODAY), true)
+
+// 8. Medals must be RECOMPUTED inside a window, not sliced off the all-time
+// table. Ana and Ben have one gold each all-time; only Ben's is recent.
+{
+  const rows0 = [
+    r('Ana', 'Queens', 846, 10), r('Ben', 'Queens', 846, 20),
+    r('Ben', 'Queens', 876, 10), r('Ana', 'Queens', 876, 20),
+  ].map(x => ({ ...x, date: puzzleToDate(x.game, x.puzzle) }))
+
+  const allTime = buildMedalTable(rows0).rows
+  const week = buildMedalTable(rows0.filter(x => withinPeriod(x.date, 7, TODAY))).rows
+  check('7-day window re-ranks rather than slicing',
+    [allTime.length, allTime[0].total.gold, week.length, week[0].player, week[0].total.gold],
+    [2, 1, 2, 'Ben', 1])
+}
 
 console.log(`\n${pass} passed, ${fail} failed`)
 process.exit(fail ? 1 : 0)

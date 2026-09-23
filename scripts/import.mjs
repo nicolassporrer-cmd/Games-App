@@ -11,6 +11,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs'
 import { parseConversation, TRACKED_GAMES } from '../src/lib/parse.js'
 import { resolvePlayer, isKnown } from '../src/lib/players.js'
+import { puzzleToDate, dateSpan } from '../src/lib/dates.js'
 
 const rawDir = new URL('../raw/', import.meta.url)
 const outFile = new URL('../public/data/results.json', import.meta.url)
@@ -42,7 +43,7 @@ for (const f of files) {
     const player = resolvePlayer(r.player)
     const key = `${player}|${r.game}|${r.puzzle}`
     if (byKey.has(key)) continue          // first recorded score wins
-    byKey.set(key, { player, game: r.game, puzzle: r.puzzle, score: r.score, display: r.display })
+    byKey.set(key, { player, game: r.game, puzzle: r.puzzle, date: puzzleToDate(r.game, r.puzzle), score: r.score, display: r.display })
   }
   console.log(`  ${f}: ${results.length} results, ${ignored.length} ignored, ${unmatched.length} unmatched`)
 }
@@ -59,6 +60,9 @@ writeFileSync(outFile, JSON.stringify({
 console.log(`\nparsed ${parsedTotal} result lines across ${files.length} file(s)`)
 console.log(`ignored ${ignoredTotal} (untracked games)`)
 console.log(`stored ${results.length} unique results (+${results.length - before} new)`)
+
+const span = dateSpan(results)
+if (span) console.log(`derived dates: ${span.first} to ${span.last} (${span.days} distinct days)`)
 
 const strangers = [...allSenders].filter(s => !isKnown(s))
 if (strangers.length) {

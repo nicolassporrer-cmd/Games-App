@@ -87,3 +87,7 @@ button.primary:disabled { opacity: 0.4; cursor: default; }
 footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
 footer p { margin: 4px 0; }
 .gen { font-size: 12px; }
+
+.tabs.periods { margin-top: -6px; }
+.tabs.periods button { font-size: 13px; padding: 5px 12px; }
+.puzzle h3 .date { display: block; font-size: 12px; color: var(--muted); font-weight: 400; margin-top: 2px; }

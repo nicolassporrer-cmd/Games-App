@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { buildMedalTable, rankPuzzle, GAMES } from './lib/ranking.js'
 import { parseConversation } from './lib/parse.js'
 import { resolvePlayer } from './lib/players.js'
+import { PERIODS, withinPeriod, puzzleToDate } from './lib/dates.js'
 
 const MEDALS = { 1: '🥇', 2: '🥈', 3: '🥉' }
 
@@ -69,7 +70,12 @@ function Podiums({ results, games }) {
     return [...keys.entries()]
       .map(([key, entries]) => {
         const [game, puzzle] = key.split('|')
-        return { game, puzzle: Number(puzzle), entries: rankPuzzle(entries, game) }
+        return {
+          game,
+          puzzle: Number(puzzle),
+          date: entries[0]?.date ?? puzzleToDate(game, Number(puzzle)),
+          entries: rankPuzzle(entries, game),
+        }
       })
       .sort((a, b) => b.puzzle - a.puzzle || a.game.localeCompare(b.game))
   }, [results])
@@ -78,7 +84,10 @@ function Podiums({ results, games }) {
     <div className="podiums">
       {puzzles.map(p => (
         <section className="puzzle" key={`${p.game}-${p.puzzle}`}>
-          <h3>{p.game} <span className="num">#{p.puzzle}</span></h3>
+          <h3>
+            {p.game} <span className="num">#{p.puzzle}</span>
+            {p.date && <span className="date">{new Date(`${p.date}T12:00:00Z`).toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' })}</span>}
+          </h3>
           <ol>
             {p.entries.map(e => (
               <li key={e.player} className={e.place <= 3 ? 'podium' : ''}>
@@ -102,7 +111,8 @@ function AddResults({ onMerge }) {
   function run() {
     const { results, ignored, unmatched, senders } = parseConversation(text)
     const incoming = results.map(r => ({
-      player: resolvePlayer(r.player), game: r.game, puzzle: r.puzzle, score: r.score, display: r.display,
+      player: resolvePlayer(r.player), game: r.game, puzzle: r.puzzle,
+      date: puzzleToDate(r.game, r.puzzle), score: r.score, display: r.display,
     }))
     const added = onMerge(incoming)
     setReport({ parsed: results.length, ignored: ignored.length, unmatched, senders: senders.length, added })
@@ -156,6 +166,7 @@ export default function App() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
   const [scope, setScope] = useState('all')
+  const [period, setPeriod] = useState('all')
   const [extra, setExtra] = useState([])
 
   useEffect(() => {
@@ -167,7 +178,13 @@ export default function App() {
 
   const all = useMemo(() => merge(data?.results ?? [], extra).results, [data, extra])
   const games = scope === 'all' ? GAMES : [scope]
-  const scoped = useMemo(() => all.filter(r => games.includes(r.game)), [all, scope])
+  const days = PERIODS.find(p => p.id === period)?.days ?? null
+
+  // Medals are recomputed inside the window rather than sliced from the all-time
+  // table: a podium is only meaningful among the players in that same window.
+  const scoped = useMemo(
+    () => all.filter(r => games.includes(r.game) && withinPeriod(r.date ?? puzzleToDate(r.game, r.puzzle), days)),
+    [all, scope, period])
   const { rows, puzzleCount, resultCount } = useMemo(() => buildMedalTable(scoped, games), [scoped, scope])
 
   if (error) return <main className="app"><h1>Games App</h1><p className="empty">Chargement impossible : {error}</p></main>
@@ -190,6 +207,16 @@ export default function App() {
         ))}
       </nav>
 
+      <nav className="tabs periods">
+        {PERIODS.map(p => (
+          <button key={p.id} className={period === p.id ? 'on' : ''} onClick={() => setPeriod(p.id)}>{p.label}</button>
+        ))}
+      </nav>
+
+      {resultCount === 0 && (
+        <p className="empty">Aucun résultat sur cette période.</p>
+      )}
+
       <MedalTable rows={rows} games={games} />
 
       <h2>Grille par grille</h2>
@@ -205,6 +232,9 @@ export default function App() {
       <footer>
         <p>Classement par temps brut. Égalité = même médaille, la place suivante est sautée.
         Les médailles ne sont attribuées qu’entre les joueurs ayant posté cette grille.</p>
+        <p>Les dates sont <strong>déduites</strong> du numéro de grille (les messages LinkedIn n’en
+        portent pas). Elles servent uniquement à filtrer et afficher : les médailles sont toujours
+        calculées à partir du numéro de grille.</p>
         <p className="gen">Données générées le {new Date(data.generatedAt).toLocaleString('fr-FR')}</p>
       </footer>
     </main>
