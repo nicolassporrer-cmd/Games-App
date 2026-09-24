@@ -137,7 +137,30 @@ check('an unknown game defaults to 1 rather than undefined', coefficientOf('Pinp
   check('played is not weighted', [ana.total.played, ben.total.played], [5, 5])
 }
 
-// 10. On a single-game view the coefficient scales everything equally, so it
+// 10. The toggle: { weighted: false } must reorder, not just relabel. Same
+// fixture as above — Ben leads on raw golds, Ana on weighted ones.
+{
+  const results = [
+    r('Ana', 'Tango', 1, 10), r('Ben', 'Tango', 1, 20),
+    r('Ana', 'Tango', 2, 10), r('Ben', 'Tango', 2, 20),
+    r('Ben', 'Zip', 1, 10), r('Ana', 'Zip', 1, 20),
+    r('Ben', 'Zip', 2, 10), r('Ana', 'Zip', 2, 20),
+    r('Ben', 'Zip', 3, 10), r('Ana', 'Zip', 3, 20),
+  ]
+  check('weighting off sorts by raw medals, weighting on by weighted ones',
+    [buildMedalTable(results, undefined, { weighted: false }).rows[0].player,
+     buildMedalTable(results, undefined, { weighted: true }).rows[0].player,
+     buildMedalTable(results).rows[0].player],   // default stays weighted
+    ['Ben', 'Ana', 'Ana'])
+
+  // Both figures are present whichever way it is sorted, so the UI can render
+  // either without recomputing.
+  const off = buildMedalTable(results, undefined, { weighted: false }).rows[0]
+  check('both raw and weighted totals are returned regardless of the sort',
+    [off.player, off.total.gold, off.weighted.gold], ['Ben', 3, 3])
+}
+
+// 11. On a single-game view the coefficient scales everything equally, so it
 // cannot reorder anyone — but the numbers would look inflated, which is why the
 // UI shows raw there. Verify the maths so that choice stays safe.
 {

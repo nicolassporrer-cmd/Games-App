@@ -43,6 +43,12 @@ Le coefficient est appliqué **à chaque rang séparément** (or pondéré, puis
 puis bronze pondéré), ce qui conserve le départage olympique sans inventer une valeur en
 points pour l'or, l'argent et le bronze.
 
+Une **case à cocher** en haut de la page bascule entre pondéré et brut (chaque jeu à 1). Le
+choix pilote aussi le **tri**, pas seulement les nombres affichés : afficher des médailles
+brutes dans un ordre calculé sur les pondérées ressemblerait à un bug. Il est mémorisé dans
+le navigateur (pondéré par défaut) et la case disparaît sur un onglet de jeu unique, où le
+coefficient ne peut rien changer.
+
 Deux choses qu'il ne touche jamais :
 
 - **Les colonnes par jeu restent en médailles brutes.** Un or au Tango vaut un or dans la

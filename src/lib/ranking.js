@@ -53,7 +53,10 @@ export function rankPuzzle(entries, game) {
 // Medals are only awarded among players who actually posted that puzzle, so a
 // two-player day produces a gold and a silver and no bronze. Not posting simply
 // keeps you off the podium — there is no penalty and no zero.
-export function buildMedalTable(results, games = GAMES) {
+// `weighted` selects which figures drive the ORDER. Both are always returned, so
+// the UI can render either, but the sort has to follow the same choice — showing
+// raw counts in an order computed from weighted ones would look like a bug.
+export function buildMedalTable(results, games = GAMES, { weighted = true } = {}) {
   const clean = dedupe(results).filter(r => games.includes(r.game))
 
   const puzzles = new Map()
@@ -96,12 +99,12 @@ export function buildMedalTable(results, games = GAMES) {
     return { ...p, total, weighted }
   })
 
-  // Olympic ordering on the weighted figures: golds, then silvers, then bronzes,
-  // then name for stability.
+  // Olympic ordering: golds, then silvers, then bronzes, then name for stability.
+  const by = weighted ? 'weighted' : 'total'
   rows.sort((a, b) =>
-    b.weighted.gold - a.weighted.gold ||
-    b.weighted.silver - a.weighted.silver ||
-    b.weighted.bronze - a.weighted.bronze ||
+    b[by].gold - a[by].gold ||
+    b[by].silver - a[by].silver ||
+    b[by].bronze - a[by].bronze ||
     a.player.localeCompare(b.player))
 
   return { rows, puzzleCount: puzzles.size, resultCount: clean.length }

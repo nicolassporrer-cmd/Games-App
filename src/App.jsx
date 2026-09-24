@@ -26,25 +26,32 @@ function merge(existing, incoming) {
   return { results: [...byKey.values()], added }
 }
 
-function MedalTable({ rows, games }) {
+function MedalTable({ rows, games, weighting }) {
   if (!rows.length) return <p className="empty">Aucun résultat.</p>
 
   // Coefficients only mean anything when several games are combined. On a single
   // game tab every medal would be scaled by the same factor, so the order would
-  // not change and the inflated numbers would just be confusing — show raw there.
-  const weighted = games.length > 1
+  // not change and the inflated numbers would just be confusing — show raw there
+  // regardless of the toggle.
+  const weighted = weighting && games.length > 1
   const shown = r => (weighted ? r.weighted : r.total)
 
   return (
     <>
-      {weighted && (
+      {games.length > 1 && (
         <p className="weighting">
-          {/* Built from COEFFICIENTS rather than written out, so the sentence can
-              never contradict the actual weighting. */}
-          Classement <strong>pondéré</strong> par difficulté :{' '}
-          {games.map((g, i) => (
-            <span key={g}>{i > 0 ? ' · ' : ''}{g} <strong>×{coefficientOf(g)}</strong></span>
-          ))}. Les colonnes par jeu restent en médailles brutes.
+          {weighted ? (
+            <>
+              {/* Built from COEFFICIENTS rather than written out, so the sentence
+                  can never contradict the actual weighting. */}
+              Classement <strong>pondéré</strong> par difficulté :{' '}
+              {games.map((g, i) => (
+                <span key={g}>{i > 0 ? ' · ' : ''}{g} <strong>×{coefficientOf(g)}</strong></span>
+              ))}. Les colonnes par jeu restent en médailles brutes.
+            </>
+          ) : (
+            <>Classement <strong>brut</strong> : chaque médaille compte pour 1, quel que soit le jeu.</>
+          )}
         </p>
       )}
       <div className="table-wrap">
@@ -55,10 +62,14 @@ function MedalTable({ rows, games }) {
               <th className="who">Joueur</th>
               <th>🥇 1<sup>er</sup></th><th>🥈 2<sup>e</sup></th><th>🥉 3<sup>e</sup></th>
               <th className="played">Parties</th>
-              {weighted && games.map(g => (
+              {games.length > 1 && games.map(g => (
                 <th key={g} className="per-game">
                   {g}
-                  <span className={`coef${coefficientOf(g) > 1 ? ' up' : ''}`}>coef. ×{coefficientOf(g)}</span>
+                  {/* No coefficient label when weighting is off — printing
+                      "coef. ×1" everywhere would imply it is still being applied. */}
+                  {weighted && (
+                    <span className={`coef${coefficientOf(g) > 1 ? ' up' : ''}`}>coef. ×{coefficientOf(g)}</span>
+                  )}
                 </th>
               ))}
             </tr>
@@ -76,7 +87,7 @@ function MedalTable({ rows, games }) {
                   </td>
                 ))}
                 <td className="played">{r.total.played}</td>
-                {weighted && games.map(g => (
+                {games.length > 1 && games.map(g => (
                   <td key={g} className="per-game">
                     {r.games[g].played === 0
                       ? <span className="dash">–</span>
@@ -87,11 +98,11 @@ function MedalTable({ rows, games }) {
             ))}
           </tbody>
         </table>
-        {weighted && (
+        {games.length > 1 && (
           <p className="legend">
             Colonnes par jeu : 1<sup>er</sup>/2<sup>e</sup>/3<sup>e</sup> en médailles brutes —
-            « – » signifie que le joueur n’a jamais posté ce jeu. Survole un total pour voir le
-            nombre réel de médailles.
+            « – » signifie que le joueur n’a jamais posté ce jeu.
+            {weighted && ' Survole un total pour voir le nombre réel de médailles.'}
           </p>
         )}
       </div>
@@ -228,6 +239,16 @@ export default function App() {
   const [period, setPeriod] = useState('all')
   const [extra, setExtra] = useState([])
 
+  // Remembered per browser so the choice survives a reload. Wrapped because
+  // localStorage throws in a private window or with site data blocked, and the
+  // page has to work either way — weighted is the default.
+  const [weighting, setWeighting] = useState(() => {
+    try { return localStorage.getItem('weighting') !== 'off' } catch { return true }
+  })
+  useEffect(() => {
+    try { localStorage.setItem('weighting', weighting ? 'on' : 'off') } catch { /* ignore */ }
+  }, [weighting])
+
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/results.json`)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() })
@@ -244,7 +265,8 @@ export default function App() {
   const scoped = useMemo(
     () => all.filter(r => games.includes(r.game) && withinPeriod(r.date ?? puzzleToDate(r.game, r.puzzle), days)),
     [all, scope, period])
-  const { rows, puzzleCount, resultCount } = useMemo(() => buildMedalTable(scoped, games), [scoped, scope])
+  const { rows, puzzleCount, resultCount } = useMemo(
+    () => buildMedalTable(scoped, games, { weighted: weighting }), [scoped, scope, weighting])
 
   if (error) return <main className="app"><h1>{APP_NAME}</h1><p className="empty">Chargement impossible : {error}</p></main>
   if (!data) return <main className="app"><h1>{APP_NAME}</h1><p className="empty">Chargement…</p></main>
@@ -278,11 +300,20 @@ export default function App() {
         ))}
       </nav>
 
+      {/* Hidden on a single-game tab, where the coefficient cannot change
+          anything and the tickbox would just look broken. */}
+      {games.length > 1 && (
+        <label className="switch">
+          <input type="checkbox" checked={weighting} onChange={e => setWeighting(e.target.checked)} />
+          <span>Classement pondéré par difficulté</span>
+        </label>
+      )}
+
       {resultCount === 0 && (
         <p className="empty">Aucun résultat sur cette période.</p>
       )}
 
-      <MedalTable rows={rows} games={games} />
+      <MedalTable rows={rows} games={games} weighting={weighting} />
 
       <h2>Grille par grille</h2>
       <Podiums results={scoped} games={games} />
