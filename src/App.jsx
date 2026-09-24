@@ -39,8 +39,12 @@ function MedalTable({ rows, games }) {
     <>
       {weighted && (
         <p className="weighting">
-          Classement <strong>pondéré</strong> : une médaille au Queens ou au Tango compte double.
-          Les colonnes par jeu restent en médailles brutes.
+          {/* Built from COEFFICIENTS rather than written out, so the sentence can
+              never contradict the actual weighting. */}
+          Classement <strong>pondéré</strong> par difficulté :{' '}
+          {games.map((g, i) => (
+            <span key={g}>{i > 0 ? ' · ' : ''}{g} <strong>×{coefficientOf(g)}</strong></span>
+          ))}. Les colonnes par jeu restent en médailles brutes.
         </p>
       )}
       <div className="table-wrap">
@@ -95,6 +99,12 @@ function MedalTable({ rows, games }) {
   )
 }
 
+// Each game has its own numbering (Queens is past #870 while Patches is at
+// #190), so the full history would render over a thousand cards and several
+// thousand list items — unusable on a phone. The medal table still covers the
+// whole period; only this detail list is capped.
+const PODIUM_LIMIT = 32
+
 function Podiums({ results, games }) {
   const puzzles = useMemo(() => {
     const keys = new Map()
@@ -113,12 +123,24 @@ function Podiums({ results, games }) {
           entries: rankPuzzle(entries, game),
         }
       })
-      .sort((a, b) => b.puzzle - a.puzzle || a.game.localeCompare(b.game))
+      // By DATE, not puzzle number. Sorting on the number put every Queens
+      // first, then every Tango, because the ranges don't overlap — so the list
+      // was grouped by game instead of running newest-first.
+      .sort((a, b) => String(b.date).localeCompare(String(a.date)) || a.game.localeCompare(b.game))
   }, [results])
 
+  const shown = puzzles.slice(0, PODIUM_LIMIT)
+
   return (
-    <div className="podiums">
-      {puzzles.map(p => (
+    <>
+      {puzzles.length > shown.length && (
+        <p className="legend podium-note">
+          Les {shown.length} grilles les plus récentes, sur {puzzles.length} au total.
+          Le classement ci-dessus couvre bien toute la période.
+        </p>
+      )}
+      <div className="podiums">
+      {shown.map(p => (
         <section className="puzzle" key={`${p.game}-${p.puzzle}`}>
           <h3>
             {p.game} <span className="num">#{p.puzzle}</span>
@@ -135,7 +157,8 @@ function Podiums({ results, games }) {
           </ol>
         </section>
       ))}
-    </div>
+      </div>
+    </>
   )
 }
 

@@ -104,14 +104,14 @@ check('a missing date is never filtered out', withinPeriod(null, 30, TODAY), tru
 }
 
 // --- coefficients ----------------------------------------------------------
-check('Queens and Tango count double, Zip and Patches single',
+check('difficulty coefficients: Queens 4, Tango 3, Zip 1, Patches 1',
   [coefficientOf('Queens'), coefficientOf('Tango'), coefficientOf('Zip'), coefficientOf('Patches')],
-  [2, 2, 1, 1])
+  [4, 3, 1, 1])
 check('an unknown game defaults to 1 rather than undefined', coefficientOf('Pinpoint'), 1)
 
 // 9. The whole point: weighting must be able to FLIP the overall order.
-// Ana wins 2 Tango puzzles (weighted 4); Ben wins 3 Zip puzzles (weighted 3).
-// On raw counts Ben leads 3-2; weighted, Ana leads 4-3.
+// Ana wins 2 Tango puzzles (weighted 2x3 = 6); Ben wins 3 Zip puzzles
+// (weighted 3x1 = 3). On raw counts Ben leads 3-2; weighted, Ana leads 6-3.
 {
   const results = [
     r('Ana', 'Tango', 1, 10), r('Ben', 'Tango', 1, 20),
@@ -125,7 +125,7 @@ check('an unknown game defaults to 1 rather than undefined', coefficientOf('Pinp
 
   check('raw counts would favour Ben, weighted favours Ana',
     [ben.total.gold, ana.total.gold, ana.weighted.gold, ben.weighted.gold],
-    [3, 2, 4, 3])
+    [3, 2, 6, 3])
   check('...and the table is sorted on the weighted figure', rows[0].player, 'Ana')
 
   // The per-game columns are what the UI shows; they must stay untouched.
@@ -145,7 +145,7 @@ check('an unknown game defaults to 1 rather than undefined', coefficientOf('Pinp
   const tango = buildMedalTable(results, ['Tango']).rows
   check('single-game weighted is exactly raw x coefficient, order unchanged',
     [tango[0].player, tango[0].total.gold, tango[0].weighted.gold, tango[1].weighted.silver],
-    ['Ana', 1, 2, 2])
+    ['Ana', 1, 3, 3])
 
   const zipOnly = buildMedalTable([r('Ana', 'Zip', 1, 10)], ['Zip']).rows
   check('a coefficient of 1 leaves weighted equal to raw',

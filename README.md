@@ -34,9 +34,10 @@ posté en retard ou dans un autre fuseau est rattaché à la bonne grille.
 
 ## Coefficients
 
-Queens et Tango étant plus difficiles, leurs médailles **comptent double** dans le classement
-général. Zip et Patches comptent une fois. Les coefficients sont définis dans
-`COEFFICIENTS` (`src/lib/ranking.js`) et affichés sous chaque en-tête de colonne.
+Pondération par difficulté dans le classement général : **Queens ×4, Tango ×3, Zip ×1,
+Patches ×1**. Les coefficients sont définis dans `COEFFICIENTS` (`src/lib/ranking.js`),
+affichés sous chaque en-tête de colonne, et la phrase d'explication au-dessus du tableau est
+générée à partir d'eux — elle ne peut donc pas devenir fausse si on les change.
 
 Le coefficient est appliqué **à chaque rang séparément** (or pondéré, puis argent pondéré,
 puis bronze pondéré), ce qui conserve le départage olympique sans inventer une valeur en
@@ -76,13 +77,35 @@ toujours calculées à partir du numéro de grille, jamais de la date.
 ## Mettre à jour le classement
 
 ```bash
-npm run import   # raw/*.txt  ->  public/data/results.json
+npm run import   # raw/*.txt + raw/*.xlsx|csv  ->  public/data/results.json
 ```
 
 1. Sélectionner la conversation dans LinkedIn, copier.
 2. Coller dans `raw/<date>.txt`.
 3. `npm run import` — l'import fusionne, dédoublonne et signale toute ligne non comprise.
 4. Commiter `public/data/results.json` et pousser. GitHub Pages republie tout seul.
+
+Deux sources, un seul import :
+
+- **`raw/*.txt`** — la conversation copiée-collée depuis le navigateur.
+- **`raw/*.xlsx` ou `raw/*.csv`** — l'export LinkedIn (« obtenir une copie de vos données »),
+  avec l'expéditeur en colonne `FROM` et le message en colonne `CONTENT`. Sert au rattrapage
+  historique. L'export encode l'UTF-8 en CP1252 (« n° » devient « nÂ° ») ; `repairMojibake`
+  inverse ce décodage, sinon ces lignes seraient illisibles.
+
+Les deux alimentent le même dédoublonnage et peuvent donc se mélanger librement. Les exports
+sont lus en premier, donc en cas de chevauchement c'est la valeur de l'export qui est retenue.
+
+La colonne `DATE` de l'export n'est **pas** utilisée comme date du résultat : une grille
+appartient à sa propre journée, pas au moment où quelqu'un a pensé à la poster (1,16 % de
+l'historique a été posté le lendemain). Elle a servi à valider l'ancre de `dates.js` : sur
+3 368 résultats, 98,84 % ont été postés exactement à la date déduite du numéro de grille, le
+reste le lendemain, aucun avant. Sur les plus anciens — Zip #269, Tango #430, Queens #590 —
+les trois compteurs donnent 2025-12-11, soit exactement le jour d'envoi.
+
+« Grille par grille » n'affiche que les **32 grilles les plus récentes** : l'historique complet
+en compte plus de 1 000, ce qui rendrait la page inutilisable sur téléphone. Le tableau des
+médailles, lui, couvre bien toute la période.
 
 Coller deux fois la même période est sans effet : la fusion se fait sur
 `(joueur, jeu, grille)` et le score déjà enregistré gagne.

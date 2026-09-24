@@ -1,6 +1,6 @@
 // Parser tests. Every fixture here is a real line shape taken from the group's
 // conversation — each one was found by importing actual history, not imagined.
-import { parseConversation } from '../src/lib/parse.js'
+import { parseConversation, parseExportRows, repairMojibake } from '../src/lib/parse.js'
 import { resolvePlayer } from '../src/lib/players.js'
 
 let pass = 0, fail = 0
@@ -79,6 +79,51 @@ const parse = body => parseConversation(`${SENDER}\n${body}`)
     '🏅 I’m on a 92-day win streak!',
   ].join('\n'))
   check('surrounding blurb produces no phantom results', [results.length, results[0]?.score], [1, 9])
+}
+
+// 9. LinkedIn's export is UTF-8 read as CP1252. Bytes 0x80-0x9F map to
+// characters above U+00FF there, which is why a Latin-1 round trip fails.
+{
+  check('mojibake repair fixes the degree sign that broke "n°"',
+    repairMojibake('Patches nÂ°181 | 0:07'), 'Patches n°181 | 0:07')
+  check('...and the CP1252-only characters a Latin-1 decode would mangle',
+    [repairMojibake('arrivÃ©e'), repairMojibake('Jâ€™ai'), repairMojibake('ðŸ§¶')],
+    ['arrivée', 'J’ai', '🧶'])
+  check('text that is not mojibake is left untouched',
+    [repairMojibake('Queens #876 | 0:08'), repairMojibake('déjà propre')],
+    ['Queens #876 | 0:08', 'déjà propre'])
+}
+
+// 10. The two real export lines that defeated the first version of the parser.
+{
+  const rows = [
+    { FROM: 'Pierre-Alexandre Medinger', CONTENT: 'Patches nÂ°181 | 0:07 ðŸ§¶\r\nlnkd.in/patches' },
+    { FROM: 'Nicolas Malhomme', CONTENT: 'Je pense que câ€™est la pire perf de lâ€™histoire de cette convoTango #699 | 2:30' },
+  ]
+  const { results, unmatched } = parseExportRows(rows)
+  check('mojibake "n°" and a game name with no preceding space both parse',
+    [results.length, unmatched.length,
+      `${results[0].game} #${results[0].puzzle} = ${results[0].score}s`,
+      `${results[1].game} #${results[1].puzzle} = ${results[1].score}s`],
+    [2, 0, 'Patches #181 = 7s', 'Tango #699 = 150s'])
+}
+
+// 11. The export attributes by column, not by tracking a sender across lines.
+{
+  const { results, ignored, senders } = parseExportRows([
+    { FROM: 'Juliette Bourgain', CONTENT: 'Queens #590 | 0:31' },
+    { FROM: 'Ariane Delecroix', CONTENT: 'Mini Sudoku #402 | 0:37 ✏️' },
+  ])
+  check('FROM drives attribution, untracked games still counted',
+    [results[0].player, resolvePlayer(results[0].player), ignored.length, senders.length],
+    ['Juliette Bourgain', 'Juliette', 1, 2])
+}
+
+// 12. A row with a result but no sender must be reported, never guessed at.
+{
+  const { results, unmatched } = parseExportRows([{ FROM: '', CONTENT: 'Zip #555 | 0:09' }])
+  check('export row with no FROM is reported',
+    [results.length, unmatched.length, unmatched[0]?.why], [0, 1, 'row has no FROM'])
 }
 
 console.log(`\n${pass} passed, ${fail} failed`)

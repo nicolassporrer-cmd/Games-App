@@ -12,6 +12,9 @@ export const ROSTER = {
   'Ariane Delecroix': 'Ariane',
   'Nicolas Malhomme': 'Nicolas M.',
   'Nicolas Sporrer': 'Nicolas S.',
+  // Played earlier in the conversation's history; appears in the LinkedIn export
+  // but not in the recent pastes.
+  'Juliette Bourgain': 'Juliette',
 }
 
 // Anyone not on the roster gets "First L." rather than a bare first name, so a

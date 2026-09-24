@@ -12,12 +12,12 @@ export const GAMES = ['Queens', 'Tango', 'Zip', 'Patches']
 // share text for every one of them, Patches included.
 export const HIGHER_IS_BETTER = new Set([])
 
-// Queens and Tango are the harder two, so their medals count double in the
-// OVERALL ranking. The coefficient never touches the per-game columns: a gold in
-// Tango is still one gold there, and doubling it would misreport what happened.
-// It also cannot change a single-game view, where scaling every medal by the
-// same factor leaves the order identical.
-export const COEFFICIENTS = { Queens: 2, Tango: 2, Zip: 1, Patches: 1 }
+// Difficulty weighting for the OVERALL ranking only. The coefficient never
+// touches the per-game columns: a gold in Tango is still one gold there, and
+// scaling it would misreport what happened. It also cannot change a single-game
+// view, where multiplying every medal by the same factor leaves the order
+// identical.
+export const COEFFICIENTS = { Queens: 4, Tango: 3, Zip: 1, Patches: 1 }
 
 export const coefficientOf = game => COEFFICIENTS[game] ?? 1
 
