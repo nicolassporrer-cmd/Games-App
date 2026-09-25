@@ -80,6 +80,25 @@ Limite assumée : si LinkedIn interrompait un jeu une journée, toutes les dates
 fenêtre de 30 jours, mais ne peut ni réordonner ni modifier un score — les médailles sont
 toujours calculées à partir du numéro de grille, jamais de la date.
 
+## Grilles à 4 joueurs ou plus
+
+Une seconde case à cocher ne garde que les grilles jouées par au moins
+**4 joueurs** (`CONTESTED_MIN` dans `src/lib/ranking.js`). Sur l'historique complet cela
+représente 452 grilles sur 1 012 (45 %) et 2 121 résultats sur 3 364 (63 %) — 97 grilles
+n'avaient qu'un seul joueur, soit un or gratuit.
+
+Le filtre retire des **grilles entières**, jamais des joueurs à l'intérieur d'une grille : il
+s'applique donc aussi à « Grille par grille », pour qu'on ne voie jamais un podium qui n'est
+pas compté. Les médailles sont **recalculées** sur le sous-ensemble, pas simplement masquées :
+un or gagné sur une grille à deux joueurs disparaît vraiment du total.
+
+Le comptage porte sur les **joueurs distincts**, pas sur les lignes, afin qu'un import
+dupliqué ne puisse pas gonfler artificiellement une grille jusqu'au seuil.
+
+C'est le premier filtre qui change réellement le classement : Sacha passe devant Mahaut
+(5ᵉ → 4ᵉ), parce que Mahaut perd un tiers de son total pondéré en retirant les grilles peu
+disputées, contre 10 % seulement pour Sacha.
+
 ## Mettre à jour le classement
 
 ```bash

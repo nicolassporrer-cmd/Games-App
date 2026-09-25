@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { buildMedalTable, rankPuzzle, GAMES, coefficientOf } from './lib/ranking.js'
+import { buildMedalTable, rankPuzzle, GAMES, coefficientOf, filterByFieldSize, CONTESTED_MIN } from './lib/ranking.js'
 import { parseConversation } from './lib/parse.js'
 import { resolvePlayer } from './lib/players.js'
 import { PERIODS, withinPeriod, puzzleToDate } from './lib/dates.js'
@@ -239,15 +239,21 @@ export default function App() {
   const [period, setPeriod] = useState('all')
   const [extra, setExtra] = useState([])
 
-  // Remembered per browser so the choice survives a reload. Wrapped because
+  // Remembered per browser so the choices survive a reload. Wrapped because
   // localStorage throws in a private window or with site data blocked, and the
-  // page has to work either way — weighted is the default.
+  // page has to work either way — weighted on, field filter off by default.
   const [weighting, setWeighting] = useState(() => {
     try { return localStorage.getItem('weighting') !== 'off' } catch { return true }
+  })
+  const [contested, setContested] = useState(() => {
+    try { return localStorage.getItem('contested') === 'on' } catch { return false }
   })
   useEffect(() => {
     try { localStorage.setItem('weighting', weighting ? 'on' : 'off') } catch { /* ignore */ }
   }, [weighting])
+  useEffect(() => {
+    try { localStorage.setItem('contested', contested ? 'on' : 'off') } catch { /* ignore */ }
+  }, [contested])
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/results.json`)
@@ -262,9 +268,13 @@ export default function App() {
 
   // Medals are recomputed inside the window rather than sliced from the all-time
   // table: a podium is only meaningful among the players in that same window.
-  const scoped = useMemo(
-    () => all.filter(r => games.includes(r.game) && withinPeriod(r.date ?? puzzleToDate(r.game, r.puzzle), days)),
-    [all, scope, period])
+  // The field-size filter drops whole puzzles, so it applies equally to the
+  // table and to the podium list below — nobody should see a podium that isn't
+  // being counted.
+  const scoped = useMemo(() => {
+    const inScope = all.filter(r => games.includes(r.game) && withinPeriod(r.date ?? puzzleToDate(r.game, r.puzzle), days))
+    return contested ? filterByFieldSize(inScope, CONTESTED_MIN) : inScope
+  }, [all, scope, period, contested])
   const { rows, puzzleCount, resultCount } = useMemo(
     () => buildMedalTable(scoped, games, { weighted: weighting }), [scoped, scope, weighting])
 
@@ -300,14 +310,21 @@ export default function App() {
         ))}
       </nav>
 
-      {/* Hidden on a single-game tab, where the coefficient cannot change
-          anything and the tickbox would just look broken. */}
-      {games.length > 1 && (
+      <div className="switches">
+        {/* The weighting tickbox is hidden on a single-game tab, where the
+            coefficient cannot change anything and it would look broken. The
+            field-size one applies everywhere. */}
+        {games.length > 1 && (
+          <label className="switch">
+            <input type="checkbox" checked={weighting} onChange={e => setWeighting(e.target.checked)} />
+            <span>Classement pondéré par difficulté</span>
+          </label>
+        )}
         <label className="switch">
-          <input type="checkbox" checked={weighting} onChange={e => setWeighting(e.target.checked)} />
-          <span>Classement pondéré par difficulté</span>
+          <input type="checkbox" checked={contested} onChange={e => setContested(e.target.checked)} />
+          <span>Uniquement les grilles à {CONTESTED_MIN} joueurs ou plus</span>
         </label>
-      )}
+      </div>
 
       {resultCount === 0 && (
         <p className="empty">Aucun résultat sur cette période.</p>

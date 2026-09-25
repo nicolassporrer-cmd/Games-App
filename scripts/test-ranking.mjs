@@ -1,6 +1,6 @@
 // Synthetic fixtures ONLY — these numbers exist to prove the engine's edge cases
 // and must never reach data/ or the UI.
-import { buildMedalTable, rankPuzzle, dedupe, coefficientOf } from '../src/lib/ranking.js'
+import { buildMedalTable, rankPuzzle, dedupe, coefficientOf, filterByFieldSize } from '../src/lib/ranking.js'
 import { puzzleToDate, withinPeriod } from '../src/lib/dates.js'
 
 let pass = 0, fail = 0
@@ -173,6 +173,44 @@ check('an unknown game defaults to 1 rather than undefined', coefficientOf('Pinp
   const zipOnly = buildMedalTable([r('Ana', 'Zip', 1, 10)], ['Zip']).rows
   check('a coefficient of 1 leaves weighted equal to raw',
     [zipOnly[0].total.gold, zipOnly[0].weighted.gold], [1, 1])
+}
+
+// --- field-size filter -----------------------------------------------------
+{
+  // Queens #1 had four players, Queens #2 only two, Tango #1 exactly four.
+  const results = [
+    r('Ana', 'Queens', 1, 10), r('Ben', 'Queens', 1, 20), r('Caz', 'Queens', 1, 30), r('Dee', 'Queens', 1, 40),
+    r('Ana', 'Queens', 2, 10), r('Ben', 'Queens', 2, 20),
+    r('Ana', 'Tango', 1, 10), r('Ben', 'Tango', 1, 20), r('Caz', 'Tango', 1, 30), r('Dee', 'Tango', 1, 40),
+  ]
+  const kept = filterByFieldSize(results, 4)
+  check('keeps only puzzles with 4+ players, whole puzzles at a time',
+    [kept.length, new Set(kept.map(x => `${x.game}${x.puzzle}`)).size, kept.some(x => x.puzzle === 2)],
+    [8, 2, false])
+
+  // The boundary is inclusive: exactly 4 stays, 3 goes.
+  const three = [r('Ana', 'Zip', 1, 10), r('Ben', 'Zip', 1, 20), r('Caz', 'Zip', 1, 30)]
+  check('4 is inclusive, 3 is excluded',
+    [filterByFieldSize(three, 4).length, filterByFieldSize([...three, r('Dee', 'Zip', 1, 40)], 4).length],
+    [0, 4])
+
+  check('no filter when min is absent or 1',
+    [filterByFieldSize(three, 0).length, filterByFieldSize(three, 1).length, filterByFieldSize(three, undefined).length],
+    [3, 3, 3])
+
+  // Distinct PLAYERS, not rows: a duplicated import must not fake a full field.
+  const dupes = [
+    r('Ana', 'Zip', 9, 10), r('Ana', 'Zip', 9, 10), r('Ana', 'Zip', 9, 10), r('Ana', 'Zip', 9, 10),
+  ]
+  check('duplicate rows cannot inflate a field size', filterByFieldSize(dupes, 4).length, 0)
+
+  // Dropping the thin puzzles must RECOMPUTE medals, not just hide rows: Ana's
+  // free gold on the two-player Queens #2 has to disappear from her total.
+  const before = buildMedalTable(results).rows.find(x => x.player === 'Ana')
+  const after = buildMedalTable(filterByFieldSize(results, 4)).rows.find(x => x.player === 'Ana')
+  check('a gold won on a thin puzzle is removed, not merely hidden',
+    [before.total.gold, after.total.gold, before.total.played, after.total.played],
+    [3, 2, 3, 2])
 }
 
 console.log(`\n${pass} passed, ${fail} failed`)

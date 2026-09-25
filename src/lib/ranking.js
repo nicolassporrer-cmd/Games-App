@@ -21,6 +21,22 @@ export const COEFFICIENTS = { Queens: 4, Tango: 3, Zip: 1, Patches: 1 }
 
 export const coefficientOf = game => COEFFICIENTS[game] ?? 1
 
+// A puzzle only one or two people played hands out a nearly free gold. This
+// keeps puzzles with a real field, counting DISTINCT PLAYERS rather than rows so
+// a duplicated import can never inflate a field size.
+export const CONTESTED_MIN = 4
+
+export function filterByFieldSize(results, min) {
+  if (!min || min <= 1) return results
+  const fields = new Map()
+  for (const r of results) {
+    const key = `${r.game}|${r.puzzle}`
+    if (!fields.has(key)) fields.set(key, new Set())
+    fields.get(key).add(r.player)
+  }
+  return results.filter(r => fields.get(`${r.game}|${r.puzzle}`).size >= min)
+}
+
 // One result per (player, game, puzzle). If someone posts the same puzzle twice,
 // keep the FIRST one — re-posting a better score later shouldn't win a medal.
 export function dedupe(results) {
