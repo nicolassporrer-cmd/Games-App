@@ -7,7 +7,11 @@
 
 export const TRACKED_GAMES = ['Queens', 'Tango', 'Zip', 'Patches']
 
-const ALL_GAMES = ['Queens', 'Tango', 'Zip', 'Patches', 'Pinpoint', 'Crossclimb', 'Mini Sudoku']
+// Untracked games are listed here too, so they are COUNTED as ignored rather
+// than being invisible to the parser. "Wend" appeared in the group on
+// 2026-09-27; a game missing from this list produces no result and no warning,
+// which is exactly how a real tracked game could one day be lost silently.
+const ALL_GAMES = ['Queens', 'Tango', 'Zip', 'Patches', 'Pinpoint', 'Crossclimb', 'Mini Sudoku', 'Wend']
 
 // The separator before the puzzle number is usually "#", but LinkedIn also emits
 // "no." and "n°" on some clients — seen in the wild as "Queens no. 870 | 0:15"
