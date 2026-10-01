@@ -167,7 +167,10 @@ th.per-game .coef.up { color: var(--accent); }
    two themes. */
 .who .flag {
   display: block;
-  margin-top: 2px;
+  /* auto margins: the box is capped by max-width, and a block sits flush left
+     even when its text is centred, so without this it drifts left of the name
+     above it — by 10px at 1100px wide, and more on a bigger screen. */
+  margin: 2px auto 0;
   font-size: 11px;
   font-weight: 500;
   font-style: italic;
