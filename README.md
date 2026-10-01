@@ -99,6 +99,19 @@ C'est le premier filtre qui change réellement le classement : Sacha passe devan
 (5ᵉ → 4ᵉ), parce que Mahaut perd un tiers de son total pondéré en retirant les grilles peu
 disputées, contre 10 % seulement pour Sacha.
 
+## Mentions sous les noms
+
+`FLAGS` dans `src/lib/players.js` associe un libellé en rouge à un joueur, affiché sous son
+nom dans le tableau principal. La clé est le **libellé court** (celui que stocke le
+scoreboard), donc une mention survit à tout changement d'écriture du nom complet.
+
+Purement éditorial : une mention ne touche jamais un score, une médaille ni l'ordre du
+classement. Supprimer la ligne retire la mention. Elle n'apparaît que dans le tableau, pas
+dans « Grille par grille », où elle se répéterait des centaines de fois.
+
+Deux rouges sont définis, un lisible sur fond sombre et un sur fond blanc — un rouge unique
+échoue sur l'un des deux thèmes (contraste mesuré : 5,57:1 en clair).
+
 ## Mettre à jour le classement
 
 ```bash

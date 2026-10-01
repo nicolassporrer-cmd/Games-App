@@ -31,3 +31,13 @@ export function resolvePlayer(fullName) {
 export function isKnown(fullName) {
   return Boolean(ROSTER[String(fullName).trim()])
 }
+
+// Notes shown in red under a player's name in the main table, keyed by the SHORT
+// display label (the same string the scoreboard stores), so a flag survives any
+// change to how full names are written. Purely editorial — a flag never touches
+// a score, a medal or the ordering. Delete a line to remove a flag.
+export const FLAGS = {
+  Sacha: 'Contrôle antidopage non satisfaisant',
+}
+
+export const flagFor = player => FLAGS[player] ?? null

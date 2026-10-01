@@ -161,3 +161,23 @@ th.per-game .coef.up { color: var(--accent); }
 }
 .switch input { width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer; margin: 0; }
 .switch:hover span { color: var(--text); }
+
+/* Editorial flag under a player's name. Two reds: the bright one is legible on
+   the dark background, the darker one on white — a single red fails one of the
+   two themes. */
+.who .flag {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+  white-space: normal;
+  max-width: 190px;
+  color: #ff6b6b;
+}
+@media (prefers-color-scheme: light) {
+  .who .flag { color: #c62a2f; }
+}
+@media (max-width: 600px) {
+  .who .flag { font-size: 10px; max-width: 140px; }
+}

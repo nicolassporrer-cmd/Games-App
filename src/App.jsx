@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { buildMedalTable, rankPuzzle, GAMES, coefficientOf, filterByFieldSize, CONTESTED_MIN } from './lib/ranking.js'
 import { parseConversation } from './lib/parse.js'
-import { resolvePlayer } from './lib/players.js'
+import { resolvePlayer, flagFor } from './lib/players.js'
 import { PERIODS, withinPeriod, puzzleToDate } from './lib/dates.js'
 // Imported rather than referenced from public/: the site is served from
 // /Games-App/, so a hardcoded absolute path would 404. Vite rewrites this one
@@ -78,7 +78,12 @@ function MedalTable({ rows, games, weighting }) {
             {rows.map((r, i) => (
               <tr key={r.player}>
                 <td className="rank">{i + 1}</td>
-                <td className="who">{r.player}</td>
+                <td className="who">
+                  {r.player}
+                  {/* Editorial note only — it does not affect the score, the
+                      medals or the sort order. */}
+                  {flagFor(r.player) && <span className="flag">{flagFor(r.player)}</span>}
+                </td>
                 {['gold', 'silver', 'bronze'].map(k => (
                   <td key={k} className={k}
                     /* Hovering gives the true medal count behind the weighted figure. */
