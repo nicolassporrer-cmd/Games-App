@@ -88,10 +88,32 @@ function cleanName(raw) {
   return name
 }
 
+// Some clients break the share text over two lines and drop the pipe entirely:
+//
+//     Zip #563
+//     0:38 🏁
+//
+// Neither line can be parsed alone, and neither trips the safety net below — the
+// first has no time, the second has no game name — so these vanish without a
+// warning. Rejoining them up front lets the ordinary line-based parsing work
+// unchanged, for pastes and for export rows alike.
+const SPLIT_RESULT_RE = new RegExp(
+  `(${ALL_GAMES.join('|')})[ \\t]*(#|no\\.?[ \\t]*|n[°o][ \\t]*)(\\d+)[ \\t]*\\r?\\n[ \\t]*(\\d+:\\d{2})`, 'g')
+
+export function joinSplitResults(text) {
+  return text.replace(SPLIT_RESULT_RE, '$1 $2$3 | $4')
+}
+
+// A game and a puzzle number alone on a line means the rejoin above failed —
+// the time went somewhere unexpected. Worth reporting rather than dropping.
+const ORPHAN_HEADER_RE = new RegExp(
+  `^[ \\t]*(?:${ALL_GAMES.join('|')})[ \\t]*(?:#|no\\.?[ \\t]*|n[°o][ \\t]*)\\d+[ \\t]*$`)
+
 // Broad net for format drift: a line mentioning a game, a pipe and a clock time
 // is almost certainly a result. If RESULT_RE did not match such a line, that is
 // reported rather than silently dropped.
 function looksLikeResult(line) {
+  if (ORPHAN_HEADER_RE.test(line)) return true
   return ALL_GAMES.some(g => line.includes(g)) && line.includes('|') && /\d:\d{2}/.test(line)
 }
 
@@ -118,7 +140,7 @@ export function parseExportRows(rows) {
   rows.forEach((row, i) => {
     const line = i + 2                      // +1 for the header, +1 for 1-indexing
     const sender = repairMojibake(String(row.FROM ?? '')).trim()
-    const content = repairMojibake(String(row.CONTENT ?? ''))
+    const content = joinSplitResults(repairMojibake(String(row.CONTENT ?? '')))
     if (sender) senders.add(sender)
 
     const matches = [...content.matchAll(RESULT_RE)]
@@ -150,7 +172,7 @@ export function parseExportRows(rows) {
 }
 
 export function parseConversation(text) {
-  const lines = text.split(/\r?\n/)
+  const lines = joinSplitResults(text).split(/\r?\n/)
   const results = []
   const ignored = []       // real results for games we don't track
   const quoted = []        // results inside quoted-reply previews — deliberately skipped

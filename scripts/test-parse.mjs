@@ -126,5 +126,29 @@ const parse = body => parseConversation(`${SENDER}\n${body}`)
     [results.length, unmatched.length, unmatched[0]?.why], [0, 1, 'row has no FROM'])
 }
 
+// 13. Some clients split the share text over two lines and drop the pipe. Both
+// halves are unparseable alone and neither trips the safety net, so these used
+// to vanish without a warning.
+{
+  const { results, unmatched } = parse('Zip #563\n0:38 🏁\nTango #724\n0:36 🌗\nQueens #884\n0:15 👑')
+  check('two-line results are rejoined and parsed',
+    [results.length, unmatched.length, results.map(r => `${r.game}#${r.puzzle}=${r.score}`).join(' ')],
+    [3, 0, 'Zip#563=38 Tango#724=36 Queens#884=15'])
+}
+
+// 14. A game and number alone, with the time nowhere nearby, is a format we do
+// NOT understand — it must be reported rather than quietly skipped.
+{
+  const { results, unmatched } = parse('Queens #999\nvoir plus')
+  check('orphan "Queens #999" with no time is reported, not dropped',
+    [results.length, unmatched.length, unmatched[0]?.text], [0, 1, 'Queens #999'])
+}
+
+// 15. The rejoin must not reach across unrelated lines and invent a result.
+{
+  const { results } = parse('Queens #888\nBourriner partout sans indice\n0:06 👑')
+  check('rejoin does not jump over an intervening line', results.length, 0)
+}
+
 console.log(`\n${pass} passed, ${fail} failed`)
 process.exit(fail ? 1 : 0)
