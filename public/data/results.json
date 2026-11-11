@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T15:54:51.486Z",
+  "generatedAt": "2026-11-11T17:32:01.838Z",
   "games": [
     "Queens",
     "Tango",
@@ -5174,6 +5174,1158 @@
       "date": "2026-10-09",
       "score": 68,
       "display": "1:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 207,
+      "date": "2026-10-10",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 207,
+      "date": "2026-10-10",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 208,
+      "date": "2026-10-11",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 208,
+      "date": "2026-10-11",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 208,
+      "date": "2026-10-11",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 208,
+      "date": "2026-10-11",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 209,
+      "date": "2026-10-12",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 209,
+      "date": "2026-10-12",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 209,
+      "date": "2026-10-12",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 209,
+      "date": "2026-10-12",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 209,
+      "date": "2026-10-12",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 209,
+      "date": "2026-10-12",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 210,
+      "date": "2026-10-13",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 210,
+      "date": "2026-10-13",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 210,
+      "date": "2026-10-13",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 210,
+      "date": "2026-10-13",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 210,
+      "date": "2026-10-13",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 210,
+      "date": "2026-10-13",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 211,
+      "date": "2026-10-14",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 211,
+      "date": "2026-10-14",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 211,
+      "date": "2026-10-14",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 211,
+      "date": "2026-10-14",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 211,
+      "date": "2026-10-14",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 211,
+      "date": "2026-10-14",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 212,
+      "date": "2026-10-15",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 212,
+      "date": "2026-10-15",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 212,
+      "date": "2026-10-15",
+      "score": 48,
+      "display": "0:48"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 212,
+      "date": "2026-10-15",
+      "score": 53,
+      "display": "0:53"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 212,
+      "date": "2026-10-15",
+      "score": 76,
+      "display": "1:16"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 212,
+      "date": "2026-10-15",
+      "score": 144,
+      "display": "2:24"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 213,
+      "date": "2026-10-16",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 213,
+      "date": "2026-10-16",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 213,
+      "date": "2026-10-16",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 213,
+      "date": "2026-10-16",
+      "score": 32,
+      "display": "0:32"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 213,
+      "date": "2026-10-16",
+      "score": 35,
+      "display": "0:35"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 214,
+      "date": "2026-10-17",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 214,
+      "date": "2026-10-17",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 214,
+      "date": "2026-10-17",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 215,
+      "date": "2026-10-18",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 215,
+      "date": "2026-10-18",
+      "score": 27,
+      "display": "0:27"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 215,
+      "date": "2026-10-18",
+      "score": 30,
+      "display": "0:30"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 216,
+      "date": "2026-10-19",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 216,
+      "date": "2026-10-19",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 216,
+      "date": "2026-10-19",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 216,
+      "date": "2026-10-19",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 216,
+      "date": "2026-10-19",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 216,
+      "date": "2026-10-19",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 217,
+      "date": "2026-10-20",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 217,
+      "date": "2026-10-20",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 217,
+      "date": "2026-10-20",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 217,
+      "date": "2026-10-20",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 217,
+      "date": "2026-10-20",
+      "score": 33,
+      "display": "0:33"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 218,
+      "date": "2026-10-21",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 218,
+      "date": "2026-10-21",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 218,
+      "date": "2026-10-21",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 218,
+      "date": "2026-10-21",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 218,
+      "date": "2026-10-21",
+      "score": 34,
+      "display": "0:34"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 219,
+      "date": "2026-10-22",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 219,
+      "date": "2026-10-22",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 219,
+      "date": "2026-10-22",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 219,
+      "date": "2026-10-22",
+      "score": 27,
+      "display": "0:27"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 219,
+      "date": "2026-10-22",
+      "score": 45,
+      "display": "0:45"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 219,
+      "date": "2026-10-22",
+      "score": 58,
+      "display": "0:58"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 220,
+      "date": "2026-10-23",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 220,
+      "date": "2026-10-23",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 220,
+      "date": "2026-10-23",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 220,
+      "date": "2026-10-23",
+      "score": 43,
+      "display": "0:43"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 220,
+      "date": "2026-10-23",
+      "score": 49,
+      "display": "0:49"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 221,
+      "date": "2026-10-24",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 221,
+      "date": "2026-10-24",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 221,
+      "date": "2026-10-24",
+      "score": 43,
+      "display": "0:43"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 222,
+      "date": "2026-10-25",
+      "score": 46,
+      "display": "0:46"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 222,
+      "date": "2026-10-25",
+      "score": 78,
+      "display": "1:18"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 223,
+      "date": "2026-10-26",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 223,
+      "date": "2026-10-26",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 223,
+      "date": "2026-10-26",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 223,
+      "date": "2026-10-26",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 223,
+      "date": "2026-10-26",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 224,
+      "date": "2026-10-27",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 224,
+      "date": "2026-10-27",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 224,
+      "date": "2026-10-27",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 224,
+      "date": "2026-10-27",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 224,
+      "date": "2026-10-27",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 225,
+      "date": "2026-10-28",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 225,
+      "date": "2026-10-28",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 225,
+      "date": "2026-10-28",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 225,
+      "date": "2026-10-28",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 225,
+      "date": "2026-10-28",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 225,
+      "date": "2026-10-28",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 226,
+      "date": "2026-10-29",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 226,
+      "date": "2026-10-29",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 226,
+      "date": "2026-10-29",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 226,
+      "date": "2026-10-29",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 226,
+      "date": "2026-10-29",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 226,
+      "date": "2026-10-29",
+      "score": 34,
+      "display": "0:34"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 227,
+      "date": "2026-10-30",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 227,
+      "date": "2026-10-30",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 227,
+      "date": "2026-10-30",
+      "score": 27,
+      "display": "0:27"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 228,
+      "date": "2026-10-31",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 228,
+      "date": "2026-10-31",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 229,
+      "date": "2026-11-01",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 229,
+      "date": "2026-11-01",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 229,
+      "date": "2026-11-01",
+      "score": 72,
+      "display": "1:12"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 229,
+      "date": "2026-11-01",
+      "score": 80,
+      "display": "1:20"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 230,
+      "date": "2026-11-02",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 230,
+      "date": "2026-11-02",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 230,
+      "date": "2026-11-02",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 230,
+      "date": "2026-11-02",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 230,
+      "date": "2026-11-02",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 231,
+      "date": "2026-11-03",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 231,
+      "date": "2026-11-03",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 231,
+      "date": "2026-11-03",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 231,
+      "date": "2026-11-03",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 231,
+      "date": "2026-11-03",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 231,
+      "date": "2026-11-03",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 232,
+      "date": "2026-11-04",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 232,
+      "date": "2026-11-04",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 232,
+      "date": "2026-11-04",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 232,
+      "date": "2026-11-04",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 232,
+      "date": "2026-11-04",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 232,
+      "date": "2026-11-04",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 233,
+      "date": "2026-11-05",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 233,
+      "date": "2026-11-05",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Patches",
+      "puzzle": 233,
+      "date": "2026-11-05",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 233,
+      "date": "2026-11-05",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 234,
+      "date": "2026-11-06",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 234,
+      "date": "2026-11-06",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 234,
+      "date": "2026-11-06",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 234,
+      "date": "2026-11-06",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 234,
+      "date": "2026-11-06",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 235,
+      "date": "2026-11-07",
+      "score": 30,
+      "display": "0:30"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 235,
+      "date": "2026-11-07",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 236,
+      "date": "2026-11-08",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 236,
+      "date": "2026-11-08",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 237,
+      "date": "2026-11-09",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 237,
+      "date": "2026-11-09",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 237,
+      "date": "2026-11-09",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Sacha",
+      "game": "Patches",
+      "puzzle": 238,
+      "date": "2026-11-10",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 238,
+      "date": "2026-11-10",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 238,
+      "date": "2026-11-10",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Patches",
+      "puzzle": 238,
+      "date": "2026-11-10",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Patches",
+      "puzzle": 239,
+      "date": "2026-11-11",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Patches",
+      "puzzle": 239,
+      "date": "2026-11-11",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Ariane",
+      "game": "Patches",
+      "puzzle": 239,
+      "date": "2026-11-11",
+      "score": 13,
+      "display": "0:13"
     },
     {
       "player": "Sacha",
@@ -13368,6 +14520,1158 @@
       "display": "0:27"
     },
     {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 893,
+      "date": "2026-10-10",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 893,
+      "date": "2026-10-10",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 894,
+      "date": "2026-10-11",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 894,
+      "date": "2026-10-11",
+      "score": 52,
+      "display": "0:52"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 894,
+      "date": "2026-10-11",
+      "score": 100,
+      "display": "1:40"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 894,
+      "date": "2026-10-11",
+      "score": 390,
+      "display": "6:30"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 895,
+      "date": "2026-10-12",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 895,
+      "date": "2026-10-12",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 895,
+      "date": "2026-10-12",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 895,
+      "date": "2026-10-12",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 895,
+      "date": "2026-10-12",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 895,
+      "date": "2026-10-12",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 896,
+      "date": "2026-10-13",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 896,
+      "date": "2026-10-13",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 896,
+      "date": "2026-10-13",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 896,
+      "date": "2026-10-13",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 896,
+      "date": "2026-10-13",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 896,
+      "date": "2026-10-13",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 897,
+      "date": "2026-10-14",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 897,
+      "date": "2026-10-14",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 897,
+      "date": "2026-10-14",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 897,
+      "date": "2026-10-14",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 897,
+      "date": "2026-10-14",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 897,
+      "date": "2026-10-14",
+      "score": 34,
+      "display": "0:34"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 898,
+      "date": "2026-10-15",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 898,
+      "date": "2026-10-15",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 898,
+      "date": "2026-10-15",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 898,
+      "date": "2026-10-15",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 898,
+      "date": "2026-10-15",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 898,
+      "date": "2026-10-15",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 899,
+      "date": "2026-10-16",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 899,
+      "date": "2026-10-16",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 899,
+      "date": "2026-10-16",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 899,
+      "date": "2026-10-16",
+      "score": 34,
+      "display": "0:34"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 899,
+      "date": "2026-10-16",
+      "score": 40,
+      "display": "0:40"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 900,
+      "date": "2026-10-17",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 900,
+      "date": "2026-10-17",
+      "score": 36,
+      "display": "0:36"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 900,
+      "date": "2026-10-17",
+      "score": 81,
+      "display": "1:21"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 901,
+      "date": "2026-10-18",
+      "score": 58,
+      "display": "0:58"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 901,
+      "date": "2026-10-18",
+      "score": 73,
+      "display": "1:13"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 901,
+      "date": "2026-10-18",
+      "score": 108,
+      "display": "1:48"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 901,
+      "date": "2026-10-18",
+      "score": 276,
+      "display": "4:36"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 902,
+      "date": "2026-10-19",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 902,
+      "date": "2026-10-19",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 902,
+      "date": "2026-10-19",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 902,
+      "date": "2026-10-19",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 902,
+      "date": "2026-10-19",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 902,
+      "date": "2026-10-19",
+      "score": 36,
+      "display": "0:36"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 903,
+      "date": "2026-10-20",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 903,
+      "date": "2026-10-20",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 903,
+      "date": "2026-10-20",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 903,
+      "date": "2026-10-20",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 903,
+      "date": "2026-10-20",
+      "score": 37,
+      "display": "0:37"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 904,
+      "date": "2026-10-21",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 904,
+      "date": "2026-10-21",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 904,
+      "date": "2026-10-21",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 904,
+      "date": "2026-10-21",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 904,
+      "date": "2026-10-21",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 905,
+      "date": "2026-10-22",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 905,
+      "date": "2026-10-22",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 905,
+      "date": "2026-10-22",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 905,
+      "date": "2026-10-22",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 905,
+      "date": "2026-10-22",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 905,
+      "date": "2026-10-22",
+      "score": 41,
+      "display": "0:41"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 906,
+      "date": "2026-10-23",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 906,
+      "date": "2026-10-23",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 906,
+      "date": "2026-10-23",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 906,
+      "date": "2026-10-23",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 906,
+      "date": "2026-10-23",
+      "score": 52,
+      "display": "0:52"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 907,
+      "date": "2026-10-24",
+      "score": 40,
+      "display": "0:40"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 907,
+      "date": "2026-10-24",
+      "score": 61,
+      "display": "1:01"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 907,
+      "date": "2026-10-24",
+      "score": 90,
+      "display": "1:30"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 908,
+      "date": "2026-10-25",
+      "score": 58,
+      "display": "0:58"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 908,
+      "date": "2026-10-25",
+      "score": 111,
+      "display": "1:51"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 909,
+      "date": "2026-10-26",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 909,
+      "date": "2026-10-26",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 909,
+      "date": "2026-10-26",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 909,
+      "date": "2026-10-26",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 909,
+      "date": "2026-10-26",
+      "score": 32,
+      "display": "0:32"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 910,
+      "date": "2026-10-27",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 910,
+      "date": "2026-10-27",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 910,
+      "date": "2026-10-27",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 910,
+      "date": "2026-10-27",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 910,
+      "date": "2026-10-27",
+      "score": 30,
+      "display": "0:30"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 910,
+      "date": "2026-10-27",
+      "score": 45,
+      "display": "0:45"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 911,
+      "date": "2026-10-28",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 911,
+      "date": "2026-10-28",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 911,
+      "date": "2026-10-28",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 911,
+      "date": "2026-10-28",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 911,
+      "date": "2026-10-28",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 911,
+      "date": "2026-10-28",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 912,
+      "date": "2026-10-29",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 912,
+      "date": "2026-10-29",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 912,
+      "date": "2026-10-29",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 912,
+      "date": "2026-10-29",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 912,
+      "date": "2026-10-29",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 912,
+      "date": "2026-10-29",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 913,
+      "date": "2026-10-30",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 913,
+      "date": "2026-10-30",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 913,
+      "date": "2026-10-30",
+      "score": 38,
+      "display": "0:38"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 914,
+      "date": "2026-10-31",
+      "score": 75,
+      "display": "1:15"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 914,
+      "date": "2026-10-31",
+      "score": 212,
+      "display": "3:32"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 915,
+      "date": "2026-11-01",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 915,
+      "date": "2026-11-01",
+      "score": 188,
+      "display": "3:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 915,
+      "date": "2026-11-01",
+      "score": 396,
+      "display": "6:36"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 916,
+      "date": "2026-11-02",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 916,
+      "date": "2026-11-02",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 916,
+      "date": "2026-11-02",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 916,
+      "date": "2026-11-02",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 917,
+      "date": "2026-11-03",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 917,
+      "date": "2026-11-03",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 917,
+      "date": "2026-11-03",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 917,
+      "date": "2026-11-03",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 917,
+      "date": "2026-11-03",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 917,
+      "date": "2026-11-03",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 918,
+      "date": "2026-11-04",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 918,
+      "date": "2026-11-04",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 918,
+      "date": "2026-11-04",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 918,
+      "date": "2026-11-04",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 918,
+      "date": "2026-11-04",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 919,
+      "date": "2026-11-05",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 919,
+      "date": "2026-11-05",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 919,
+      "date": "2026-11-05",
+      "score": 35,
+      "display": "0:35"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 919,
+      "date": "2026-11-05",
+      "score": 36,
+      "display": "0:36"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Queens",
+      "puzzle": 919,
+      "date": "2026-11-05",
+      "score": 73,
+      "display": "1:13"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 920,
+      "date": "2026-11-06",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 920,
+      "date": "2026-11-06",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 920,
+      "date": "2026-11-06",
+      "score": 42,
+      "display": "0:42"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 920,
+      "date": "2026-11-06",
+      "score": 69,
+      "display": "1:09"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 920,
+      "date": "2026-11-06",
+      "score": 84,
+      "display": "1:24"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 921,
+      "date": "2026-11-07",
+      "score": 45,
+      "display": "0:45"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 921,
+      "date": "2026-11-07",
+      "score": 52,
+      "display": "0:52"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 922,
+      "date": "2026-11-08",
+      "score": 75,
+      "display": "1:15"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 922,
+      "date": "2026-11-08",
+      "score": 112,
+      "display": "1:52"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 923,
+      "date": "2026-11-09",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 923,
+      "date": "2026-11-09",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 923,
+      "date": "2026-11-09",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Sacha",
+      "game": "Queens",
+      "puzzle": 924,
+      "date": "2026-11-10",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Queens",
+      "puzzle": 924,
+      "date": "2026-11-10",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 924,
+      "date": "2026-11-10",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 924,
+      "date": "2026-11-10",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Queens",
+      "puzzle": 925,
+      "date": "2026-11-11",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Queens",
+      "puzzle": 925,
+      "date": "2026-11-11",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Ariane",
+      "game": "Queens",
+      "puzzle": 925,
+      "date": "2026-11-11",
+      "score": 28,
+      "display": "0:28"
+    },
+    {
       "player": "Sacha",
       "game": "Tango",
       "puzzle": 430,
@@ -21464,6 +23768,1142 @@
       "display": "0:25"
     },
     {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 733,
+      "date": "2026-10-10",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 733,
+      "date": "2026-10-10",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 734,
+      "date": "2026-10-11",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 734,
+      "date": "2026-10-11",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 734,
+      "date": "2026-10-11",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 734,
+      "date": "2026-10-11",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 735,
+      "date": "2026-10-12",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 735,
+      "date": "2026-10-12",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 735,
+      "date": "2026-10-12",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 735,
+      "date": "2026-10-12",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 735,
+      "date": "2026-10-12",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 735,
+      "date": "2026-10-12",
+      "score": 28,
+      "display": "0:28"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 736,
+      "date": "2026-10-13",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 736,
+      "date": "2026-10-13",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 736,
+      "date": "2026-10-13",
+      "score": 28,
+      "display": "0:28"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 736,
+      "date": "2026-10-13",
+      "score": 46,
+      "display": "0:46"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 736,
+      "date": "2026-10-13",
+      "score": 79,
+      "display": "1:19"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 737,
+      "date": "2026-10-14",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 737,
+      "date": "2026-10-14",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 737,
+      "date": "2026-10-14",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 737,
+      "date": "2026-10-14",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 737,
+      "date": "2026-10-14",
+      "score": 32,
+      "display": "0:32"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 738,
+      "date": "2026-10-15",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 738,
+      "date": "2026-10-15",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 738,
+      "date": "2026-10-15",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 738,
+      "date": "2026-10-15",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 738,
+      "date": "2026-10-15",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 738,
+      "date": "2026-10-15",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 739,
+      "date": "2026-10-16",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 739,
+      "date": "2026-10-16",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 739,
+      "date": "2026-10-16",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 739,
+      "date": "2026-10-16",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 740,
+      "date": "2026-10-17",
+      "score": 29,
+      "display": "0:29"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 740,
+      "date": "2026-10-17",
+      "score": 35,
+      "display": "0:35"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 740,
+      "date": "2026-10-17",
+      "score": 46,
+      "display": "0:46"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 741,
+      "date": "2026-10-18",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 741,
+      "date": "2026-10-18",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 741,
+      "date": "2026-10-18",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 741,
+      "date": "2026-10-18",
+      "score": 69,
+      "display": "1:09"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 742,
+      "date": "2026-10-19",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 742,
+      "date": "2026-10-19",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 742,
+      "date": "2026-10-19",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 742,
+      "date": "2026-10-19",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 742,
+      "date": "2026-10-19",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 743,
+      "date": "2026-10-20",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 743,
+      "date": "2026-10-20",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 743,
+      "date": "2026-10-20",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 743,
+      "date": "2026-10-20",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 743,
+      "date": "2026-10-20",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 744,
+      "date": "2026-10-21",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 744,
+      "date": "2026-10-21",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 744,
+      "date": "2026-10-21",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 744,
+      "date": "2026-10-21",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 744,
+      "date": "2026-10-21",
+      "score": 30,
+      "display": "0:30"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 745,
+      "date": "2026-10-22",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 745,
+      "date": "2026-10-22",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 745,
+      "date": "2026-10-22",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 745,
+      "date": "2026-10-22",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 745,
+      "date": "2026-10-22",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 745,
+      "date": "2026-10-22",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 746,
+      "date": "2026-10-23",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 746,
+      "date": "2026-10-23",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 746,
+      "date": "2026-10-23",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 746,
+      "date": "2026-10-23",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 746,
+      "date": "2026-10-23",
+      "score": 28,
+      "display": "0:28"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 747,
+      "date": "2026-10-24",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 747,
+      "date": "2026-10-24",
+      "score": 75,
+      "display": "1:15"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 747,
+      "date": "2026-10-24",
+      "score": 98,
+      "display": "1:38"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 748,
+      "date": "2026-10-25",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 748,
+      "date": "2026-10-25",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 749,
+      "date": "2026-10-26",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 749,
+      "date": "2026-10-26",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 749,
+      "date": "2026-10-26",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 749,
+      "date": "2026-10-26",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 749,
+      "date": "2026-10-26",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 750,
+      "date": "2026-10-27",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 750,
+      "date": "2026-10-27",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 750,
+      "date": "2026-10-27",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 750,
+      "date": "2026-10-27",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 750,
+      "date": "2026-10-27",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 750,
+      "date": "2026-10-27",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 751,
+      "date": "2026-10-28",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 751,
+      "date": "2026-10-28",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 751,
+      "date": "2026-10-28",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 751,
+      "date": "2026-10-28",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 751,
+      "date": "2026-10-28",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 751,
+      "date": "2026-10-28",
+      "score": 27,
+      "display": "0:27"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 752,
+      "date": "2026-10-29",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 752,
+      "date": "2026-10-29",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 752,
+      "date": "2026-10-29",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 752,
+      "date": "2026-10-29",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 752,
+      "date": "2026-10-29",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 752,
+      "date": "2026-10-29",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 753,
+      "date": "2026-10-30",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 753,
+      "date": "2026-10-30",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 753,
+      "date": "2026-10-30",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 753,
+      "date": "2026-10-30",
+      "score": 33,
+      "display": "0:33"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 754,
+      "date": "2026-10-31",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 754,
+      "date": "2026-10-31",
+      "score": 33,
+      "display": "0:33"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 755,
+      "date": "2026-11-01",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 755,
+      "date": "2026-11-01",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 755,
+      "date": "2026-11-01",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 755,
+      "date": "2026-11-01",
+      "score": 45,
+      "display": "0:45"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 756,
+      "date": "2026-11-02",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 756,
+      "date": "2026-11-02",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 756,
+      "date": "2026-11-02",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 756,
+      "date": "2026-11-02",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 756,
+      "date": "2026-11-02",
+      "score": 27,
+      "display": "0:27"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 757,
+      "date": "2026-11-03",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 757,
+      "date": "2026-11-03",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 757,
+      "date": "2026-11-03",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 757,
+      "date": "2026-11-03",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 757,
+      "date": "2026-11-03",
+      "score": 29,
+      "display": "0:29"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 757,
+      "date": "2026-11-03",
+      "score": 34,
+      "display": "0:34"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 758,
+      "date": "2026-11-04",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 758,
+      "date": "2026-11-04",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 758,
+      "date": "2026-11-04",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 758,
+      "date": "2026-11-04",
+      "score": 36,
+      "display": "0:36"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 759,
+      "date": "2026-11-05",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Tango",
+      "puzzle": 759,
+      "date": "2026-11-05",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 759,
+      "date": "2026-11-05",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 759,
+      "date": "2026-11-05",
+      "score": 35,
+      "display": "0:35"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 759,
+      "date": "2026-11-05",
+      "score": 37,
+      "display": "0:37"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 760,
+      "date": "2026-11-06",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 760,
+      "date": "2026-11-06",
+      "score": 27,
+      "display": "0:27"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 760,
+      "date": "2026-11-06",
+      "score": 29,
+      "display": "0:29"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 760,
+      "date": "2026-11-06",
+      "score": 36,
+      "display": "0:36"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 760,
+      "date": "2026-11-06",
+      "score": 50,
+      "display": "0:50"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 761,
+      "date": "2026-11-07",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 761,
+      "date": "2026-11-07",
+      "score": 43,
+      "display": "0:43"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 762,
+      "date": "2026-11-08",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 762,
+      "date": "2026-11-08",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 763,
+      "date": "2026-11-09",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 763,
+      "date": "2026-11-09",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 763,
+      "date": "2026-11-09",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 764,
+      "date": "2026-11-10",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Sacha",
+      "game": "Tango",
+      "puzzle": 764,
+      "date": "2026-11-10",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Tango",
+      "puzzle": 764,
+      "date": "2026-11-10",
+      "score": 21,
+      "display": "0:21"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 764,
+      "date": "2026-11-10",
+      "score": 49,
+      "display": "0:49"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Tango",
+      "puzzle": 765,
+      "date": "2026-11-11",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Tango",
+      "puzzle": 765,
+      "date": "2026-11-11",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Tango",
+      "puzzle": 765,
+      "date": "2026-11-11",
+      "score": 34,
+      "display": "0:34"
+    },
+    {
       "player": "Juliette",
       "game": "Zip",
       "puzzle": 269,
@@ -29544,6 +32984,14 @@
       "display": "0:10"
     },
     {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 571,
+      "date": "2026-10-09",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
       "player": "Pierre-Alexandre",
       "game": "Zip",
       "puzzle": 571,
@@ -29574,6 +33022,1174 @@
       "date": "2026-10-09",
       "score": 118,
       "display": "1:58"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 572,
+      "date": "2026-10-10",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 572,
+      "date": "2026-10-10",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 573,
+      "date": "2026-10-11",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 573,
+      "date": "2026-10-11",
+      "score": 44,
+      "display": "0:44"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 573,
+      "date": "2026-10-11",
+      "score": 44,
+      "display": "0:44"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 573,
+      "date": "2026-10-11",
+      "score": 98,
+      "display": "1:38"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 574,
+      "date": "2026-10-12",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 574,
+      "date": "2026-10-12",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 574,
+      "date": "2026-10-12",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 574,
+      "date": "2026-10-12",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 574,
+      "date": "2026-10-12",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 574,
+      "date": "2026-10-12",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 575,
+      "date": "2026-10-13",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 575,
+      "date": "2026-10-13",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 575,
+      "date": "2026-10-13",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 575,
+      "date": "2026-10-13",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 575,
+      "date": "2026-10-13",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 575,
+      "date": "2026-10-13",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 576,
+      "date": "2026-10-14",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 576,
+      "date": "2026-10-14",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 576,
+      "date": "2026-10-14",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 576,
+      "date": "2026-10-14",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 576,
+      "date": "2026-10-14",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 576,
+      "date": "2026-10-14",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 577,
+      "date": "2026-10-15",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 577,
+      "date": "2026-10-15",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 577,
+      "date": "2026-10-15",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 577,
+      "date": "2026-10-15",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 577,
+      "date": "2026-10-15",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 577,
+      "date": "2026-10-15",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 578,
+      "date": "2026-10-16",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 578,
+      "date": "2026-10-16",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 578,
+      "date": "2026-10-16",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 578,
+      "date": "2026-10-16",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 578,
+      "date": "2026-10-16",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 579,
+      "date": "2026-10-17",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 579,
+      "date": "2026-10-17",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 579,
+      "date": "2026-10-17",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 580,
+      "date": "2026-10-18",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 580,
+      "date": "2026-10-18",
+      "score": 24,
+      "display": "0:24"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 580,
+      "date": "2026-10-18",
+      "score": 43,
+      "display": "0:43"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 580,
+      "date": "2026-10-18",
+      "score": 150,
+      "display": "2:30"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 581,
+      "date": "2026-10-19",
+      "score": 2,
+      "display": "0:02"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 581,
+      "date": "2026-10-19",
+      "score": 3,
+      "display": "0:03"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 581,
+      "date": "2026-10-19",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 581,
+      "date": "2026-10-19",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 581,
+      "date": "2026-10-19",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 582,
+      "date": "2026-10-20",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 582,
+      "date": "2026-10-20",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 582,
+      "date": "2026-10-20",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 582,
+      "date": "2026-10-20",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 582,
+      "date": "2026-10-20",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 583,
+      "date": "2026-10-21",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 583,
+      "date": "2026-10-21",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 583,
+      "date": "2026-10-21",
+      "score": 23,
+      "display": "0:23"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 583,
+      "date": "2026-10-21",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 583,
+      "date": "2026-10-21",
+      "score": 39,
+      "display": "0:39"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 584,
+      "date": "2026-10-22",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 584,
+      "date": "2026-10-22",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 584,
+      "date": "2026-10-22",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 584,
+      "date": "2026-10-22",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 584,
+      "date": "2026-10-22",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 584,
+      "date": "2026-10-22",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 585,
+      "date": "2026-10-23",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 585,
+      "date": "2026-10-23",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 585,
+      "date": "2026-10-23",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 585,
+      "date": "2026-10-23",
+      "score": 40,
+      "display": "0:40"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 585,
+      "date": "2026-10-23",
+      "score": 43,
+      "display": "0:43"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 585,
+      "date": "2026-10-23",
+      "score": 51,
+      "display": "0:51"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 586,
+      "date": "2026-10-24",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 587,
+      "date": "2026-10-25",
+      "score": 45,
+      "display": "0:45"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 587,
+      "date": "2026-10-25",
+      "score": 108,
+      "display": "1:48"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 588,
+      "date": "2026-10-26",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 588,
+      "date": "2026-10-26",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 588,
+      "date": "2026-10-26",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 588,
+      "date": "2026-10-26",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 588,
+      "date": "2026-10-26",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 589,
+      "date": "2026-10-27",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 589,
+      "date": "2026-10-27",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 589,
+      "date": "2026-10-27",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 589,
+      "date": "2026-10-27",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 589,
+      "date": "2026-10-27",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 590,
+      "date": "2026-10-28",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 590,
+      "date": "2026-10-28",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 590,
+      "date": "2026-10-28",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 590,
+      "date": "2026-10-28",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 590,
+      "date": "2026-10-28",
+      "score": 9,
+      "display": "0:09"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 590,
+      "date": "2026-10-28",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 591,
+      "date": "2026-10-29",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 591,
+      "date": "2026-10-29",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 591,
+      "date": "2026-10-29",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 591,
+      "date": "2026-10-29",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 591,
+      "date": "2026-10-29",
+      "score": 18,
+      "display": "0:18"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 591,
+      "date": "2026-10-29",
+      "score": 22,
+      "display": "0:22"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 592,
+      "date": "2026-10-30",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 592,
+      "date": "2026-10-30",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 592,
+      "date": "2026-10-30",
+      "score": 26,
+      "display": "0:26"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 592,
+      "date": "2026-10-30",
+      "score": 30,
+      "display": "0:30"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 593,
+      "date": "2026-10-31",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 593,
+      "date": "2026-10-31",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 593,
+      "date": "2026-10-31",
+      "score": 17,
+      "display": "0:17"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 594,
+      "date": "2026-11-01",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 594,
+      "date": "2026-11-01",
+      "score": 31,
+      "display": "0:31"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 594,
+      "date": "2026-11-01",
+      "score": 32,
+      "display": "0:32"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 594,
+      "date": "2026-11-01",
+      "score": 38,
+      "display": "0:38"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 595,
+      "date": "2026-11-02",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 595,
+      "date": "2026-11-02",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 595,
+      "date": "2026-11-02",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 595,
+      "date": "2026-11-02",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 595,
+      "date": "2026-11-02",
+      "score": 12,
+      "display": "0:12"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 596,
+      "date": "2026-11-03",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 596,
+      "date": "2026-11-03",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 596,
+      "date": "2026-11-03",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 596,
+      "date": "2026-11-03",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 596,
+      "date": "2026-11-03",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 596,
+      "date": "2026-11-03",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 597,
+      "date": "2026-11-04",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 597,
+      "date": "2026-11-04",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 597,
+      "date": "2026-11-04",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 597,
+      "date": "2026-11-04",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 597,
+      "date": "2026-11-04",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 597,
+      "date": "2026-11-04",
+      "score": 15,
+      "display": "0:15"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 598,
+      "date": "2026-11-05",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 598,
+      "date": "2026-11-05",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 598,
+      "date": "2026-11-05",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Pierre-Alexandre",
+      "game": "Zip",
+      "puzzle": 598,
+      "date": "2026-11-05",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 598,
+      "date": "2026-11-05",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 599,
+      "date": "2026-11-06",
+      "score": 6,
+      "display": "0:06"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 599,
+      "date": "2026-11-06",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 599,
+      "date": "2026-11-06",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 599,
+      "date": "2026-11-06",
+      "score": 20,
+      "display": "0:20"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 599,
+      "date": "2026-11-06",
+      "score": 25,
+      "display": "0:25"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 600,
+      "date": "2026-11-07",
+      "score": 10,
+      "display": "0:10"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 600,
+      "date": "2026-11-07",
+      "score": 14,
+      "display": "0:14"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 601,
+      "date": "2026-11-08",
+      "score": 11,
+      "display": "0:11"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 601,
+      "date": "2026-11-08",
+      "score": 19,
+      "display": "0:19"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 602,
+      "date": "2026-11-09",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 602,
+      "date": "2026-11-09",
+      "score": 4,
+      "display": "0:04"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 602,
+      "date": "2026-11-09",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Sacha",
+      "game": "Zip",
+      "puzzle": 603,
+      "date": "2026-11-10",
+      "score": 5,
+      "display": "0:05"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 603,
+      "date": "2026-11-10",
+      "score": 7,
+      "display": "0:07"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 603,
+      "date": "2026-11-10",
+      "score": 8,
+      "display": "0:08"
+    },
+    {
+      "player": "Mahaut",
+      "game": "Zip",
+      "puzzle": 603,
+      "date": "2026-11-10",
+      "score": 13,
+      "display": "0:13"
+    },
+    {
+      "player": "Ariane",
+      "game": "Zip",
+      "puzzle": 604,
+      "date": "2026-11-11",
+      "score": 16,
+      "display": "0:16"
+    },
+    {
+      "player": "Nicolas S.",
+      "game": "Zip",
+      "puzzle": 604,
+      "date": "2026-11-11",
+      "score": 29,
+      "display": "0:29"
+    },
+    {
+      "player": "Nicolas M.",
+      "game": "Zip",
+      "puzzle": 604,
+      "date": "2026-11-11",
+      "score": 37,
+      "display": "0:37"
     }
   ]
 }
